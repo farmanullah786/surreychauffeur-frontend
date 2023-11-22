@@ -1,0 +1,451 @@
+﻿.Grid, .GridHeaderImage, .LoginButton, .Title, .screnloading {
+    text-align: center
+}
+
+.GridFont, .Test {
+    text-decoration: none
+}
+
+.screnloading {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding-top: 15%;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background: #000;
+    opacity: .6 !important
+}
+
+.screnloadingtxt {
+    float: left;
+    width: 100%;
+    margin-top: -10%;
+    font-size: xx-large;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #000
+}
+
+#containerVehicle {
+    float: left;
+    width: 100%
+}
+
+.SelectFlight {
+    background-image: url(../Images/booknow.html);
+    cursor: pointer;
+    width: 124px;
+    height: 42px;
+    border: 0;
+    background-color: Transparent;
+    color: #000
+}
+
+.TextBox, .TextBox1 {
+    border-style: solid;
+    border-width: 1px
+}
+
+.Button, .LoginButton {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px
+}
+
+.FlightHeaderStyle {
+    font-family: tahoma;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bolder;
+    background: url(../Images/box-h1.html) repeat-x #e8e8e8;
+    border-color: #e8e8e8;
+    cursor: default
+}
+
+.Button, .Label, .WelComeText {
+    font-weight: 700
+}
+
+.LoginButton, .SubButton {
+    cursor: pointer;
+    font-size: 16px
+}
+
+.WelComeText {
+    font-size: 13pt;
+    color: #000;
+    font-family: Verdana;
+    width: 200px;
+    margin-top: 260px;
+    margin-left: 540px;
+    float: left
+}
+
+.GridFont, .MainMenu, .RadioButtonList, .Text, .Text1, .grid-header {
+    font-size: 7.5pt;
+    color: #000
+}
+
+.welcome1 {
+    background-image: url(../images/welcomeHome.png);
+    background-repeat: no-repeat;
+    height: 465px;
+    width: 100%;
+    float: left;
+    margin: 0
+}
+
+.TextBox {
+    font-family: Verdana,Helvitica,Sanserif;
+    border-color: #A1BBD6
+}
+
+.Button, .Combo, .GridFont, .Label, .RadioButtonList, .Text, .Text1, .TextBox1 {
+    font-family: Verdana
+}
+
+.TextBox1 {
+    border-color: #557FAF
+}
+
+.MainMenu, .grid-header {
+    font-family: Verdana
+}
+
+.RowStyle {
+    border-bottom: #a9a9a9 1px solid
+}
+
+.Text {
+    text-align: right
+}
+
+.Label {
+    font-size: 8pt;
+    color: #000
+}
+
+.Button {
+    font-size: 10pt;
+    background-color: #000305;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    text-border: none 0;
+    padding: 5px 10px
+}
+
+    .Button:hover {
+        color: #ff0
+    }
+
+.btnpackages {
+    width: 60%;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: #152a6f;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 10px;
+    margin: 50px 0 0 0;
+}
+
+    .btnpackages:hover {
+        color: #ff0;
+        background-color: #000305;
+    }
+
+.Combo {
+    font-size: 11px;
+    height: 20px;
+    width: 200PX;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #557FAF
+}
+
+.Title {
+    float: left;
+    width: 100%;
+    font-size: 20px;
+    color: #FFF;
+    font-family: 'Oleo Script',cursive;
+    font-weight: 400;
+    background: #3b0050;
+    -moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -khtml-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+    padding: 5px 0;
+    margin: 0 0 10px
+}
+
+.Grid, .GridHeaderImage, .Test {
+    font-family: Verdana
+}
+
+.TableBackGround {
+    background-image: url(../images/tab_bg.html)
+}
+
+.SelectedMenuItemStyle {
+    font-size: 8pt;
+    color: #000;
+    font-family: Verdana
+}
+
+.Test {
+    font-size: 7.5pt;
+    color: #000
+}
+
+.PageHeader {
+    background-image: url(../images/userbar_bg.html);
+    background-repeat: repeat-x
+}
+
+.GridHeaderImage {
+    font-size: 7pt;
+    background-image: url(../images/grid_bg.html);
+    color: #000;
+    font-weight: 700
+}
+
+.PaddingLeft {
+    padding-left: 5px
+}
+
+.Grid {
+    border: 1px solid #e8e8e8;
+    border-bottom: 2px solid #e8e8e8;
+    background-color: #FFF;
+    font-size: 9pt
+}
+
+.discount, .discount-text {
+    font-family: Arial;
+    font-weight: 700;
+    text-align: right
+}
+
+.HeaderStyle {
+    font-size: 15pt;
+    background: #e2017b;
+    border: 1px solid #780041
+}
+
+.AlbumShadow {
+    float: left;
+    margin-top: 8px;
+    margin-left: 20px;
+    background: #aaa
+}
+
+    .AlbumShadow img {
+        margin: -4px 4px 4px -4px;
+        display: block;
+        position: relative;
+        padding: 4px;
+        border-left: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #888;
+        border-bottom: 1px solid #000;
+        background: #fcfcfc
+    }
+
+.Login, .discount {
+    background-repeat: no-repeat
+}
+
+.DisplayNone {
+    display: none
+}
+
+.Login {
+    background-image: url(../images/bg.html);
+    height: 260px;
+    width: 624px;
+    float: left;
+    padding-top: 150px;
+    padding-left: 220px;
+    color: #000
+}
+
+.LoginButton, .discount {
+    color: #FFF;
+    text-decoration: none
+}
+
+.discount {
+    float: right;
+    width: 140px;
+    height: 84px;
+    background-image: url(../Images/discount.html);
+    background-position: right center;
+    padding-right: 80px;
+    padding-bottom: 14px;
+    font-size: 70px;
+    margin-top: -10px
+}
+
+.discount-text {
+    float: right;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    margin-top: 20px
+}
+
+.LoginButton {
+    font-family: 'PT Sans',"Myriad Web Pro","Myriad Pro",Myriad,"Segoe UI",Verdana,"Liberation Sans","Nimbus Sans L","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    white-space: normal;
+    background: #000;
+    padding: 6px 20px 7px;
+    margin: 1% 0 1% 1%;
+    border: 0
+}
+
+.SubButton, .SubButton2 {
+    font-family: 'PT Sans',"Myriad Web Pro","Myriad Pro",Myriad,"Segoe UI",Verdana,"Liberation Sans","Nimbus Sans L","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    white-space: normal;
+    background: #3b0050
+}
+
+.SubButton {
+    float: right;
+    border-radius: 3px;
+    padding: 6px 18px;
+    margin: 1% 0 1% 1%;
+    border: 0
+}
+
+.SubButton2 {
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 1.5% 7%;
+    margin: 1.5% 1%;
+    border: 0;
+    cursor: pointer
+}
+
+.SubButton3, .SubButton4 {
+    font-family: 'PT Sans',"Myriad Web Pro","Myriad Pro",Myriad,"Segoe UI",Verdana,"Liberation Sans","Nimbus Sans L","Helvetica Neue",Helvetica,Arial,sans-serif;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    padding: 7px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: normal;
+    word-spacing: normal;
+    white-space: normal;
+    cursor: pointer
+}
+
+.SubButton3 {
+    float: right;
+    border-radius: 3px;
+    background: #3b0050;
+    margin: 0;
+    border: 0
+}
+
+.SubButton4 {
+    border-radius: 3px;
+    background-color: #0a75cd;
+    margin: 0 0 10px;
+    border: 0
+}
+
+.GetButton2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    white-space: normal;
+    background: #3e3e3e;
+    padding: .5% 3%;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer
+}
+
+.loginfield {
+    display: block;
+    width: 310px;
+    padding: 4px 10px;
+    margin: 0;
+    font-family: Dosis,sans-serif;
+    font-size: 17px;
+    line-height: 1.42857143;
+    color: #555;
+    background: #fff;
+    border: 1px solid #fe4591;
+    border-radius: 5px
+}
+
+.PageClass, .PageClass2 {
+    height: 35px;
+    padding: 0 10px;
+    margin: 5px;
+    font-family: Dosis,sans-serif;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #555;
+    background: #fff
+}
+
+.PageClass {
+    border: 1px solid #68ae15;
+    border-radius: 5px
+}
+
+.PageClass2 {
+    width: 84%;
+    border: 1px solid #68ae15;
+    border-radius: 5px
+}
+
+@media screen and (max-width:320px) {
+    .loginfield {
+        display: block;
+        width: 140px;
+        height: 30px;
+        padding: 0 10px;
+        margin: 0 0 0 4%;
+        font-family: Dosis,sans-serif;
+        font-size: 17px;
+        line-height: 1.42857143;
+        color: #555;
+        background: #fff;
+        border: 1px solid #68ae15;
+        border-radius: 5px
+    }
+}
