@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import AppLayout from "../components/applayout/AppLayout";
 import LoadingOverlay from "../components/shared/LoadingOverlay";
-import TransferInquiry from "../components/forms/TransferInquiry";
 import { Link } from "react-router-dom";
+import TransferInquiryForm from "../components/forms/TransferInquiryForm";
 
 const CorporateTransferComponent = () => {
   const [loadingOverlay, setLoadingOverlay] = useState(false);
@@ -33,7 +33,7 @@ const CorporateTransferComponent = () => {
                   <Link to="/faq" className="faq-btn">
                     FAQ
                   </Link>
-                  <TransferInquiry setLoadingOverlay={setLoadingOverlay} transfer_type="corporate"/>
+                  <TransferInquiryForm setLoadingOverlay={setLoadingOverlay} transfer_type="corporate"/>
                 </div>
               </div>
             </div>

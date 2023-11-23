@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import AppLayout from "../components/applayout/AppLayout";
+import AppLayout from "../../components/applayout/AppLayout";
 import { Link } from "react-router-dom";
-import BookingForm from "../components/BookingForm";
-import PickupLocationsTable from "../components/sections/PickupLocationsTable";
-import DiscountBanner from "../components/shared/DiscountBanner";
+import BookingForm from "../../components/BookingForm";
+import PickupLocationsTable from "../../components/sections/PickupLocationsTable";
+import DiscountBanner from "../../components/shared/DiscountBanner";
 const AirportTransportInfo = () => {
   useEffect(() => {
     document.querySelector("#ctl00_dvMainContainer")?.classList.add("arp");

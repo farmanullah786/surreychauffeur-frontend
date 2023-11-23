@@ -10,16 +10,13 @@ import PinkBerryAirport from "../components/sections/PinkBerryAirport";
 import DiscountBannerSection from "../components/sections/DiscountBannerSection";
 import StationTransport from "../components/sections/StationTransport";
 
-const MainFile = () => {
+const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulating a 2-second loading delay
     const loadingTimeout = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
-
-    // Cleanup the timeout to avoid memory leaks
     return () => clearTimeout(loadingTimeout);
   }, []);
   return (
@@ -44,4 +41,4 @@ const MainFile = () => {
   );
 };
 
-export default MainFile;
+export default HomePage;

@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { postRequestWithOutToken } from "../../helpers/methods";
 import { useNavigate } from "react-router-dom";
 
-const TransferInquiry = (props) => {
+const TransferInquiryForm = (props) => {
   const navigate = useNavigate();
   const {
     register,
@@ -242,4 +242,4 @@ const TransferInquiry = (props) => {
   );
 };
 
-export default TransferInquiry;
+export default TransferInquiryForm;

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import AppLayout from "../components/applayout/AppLayout";
-import BookingForm from "../components/BookingForm";
-import DiscountBanner from "../components/shared/DiscountBanner";
+import AppLayout from "../../components/applayout/AppLayout";
+import BookingForm from "../../components/BookingForm";
+import DiscountBanner from "../../components/shared/DiscountBanner";
 
 const CruisePortTransportInfo = () => {
   useEffect(() => {

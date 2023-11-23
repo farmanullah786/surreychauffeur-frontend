@@ -1,17 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import AppLayout from "../components/applayout/AppLayout";
 import { Link } from "react-router-dom";
+import TransferInquiryForm from "../components/forms/TransferInquiryForm";
+import LoadingOverlay from "../components/shared/LoadingOverlay";
 const SightSeeingTour = () => {
-  const handleSearch = () => {
-    // Add your search logic here
-    // You can use the input value for searching
-    const inputValue = document.getElementById(
-      "ctl00_ContentPlaceHolder1_txtSearch"
-    ).value;
-    console.log("Searching for:", inputValue);
-  };
+  const [loadingOverlay, setLoadingOverlay] = useState(false);
   return (
     <AppLayout>
+      {loadingOverlay && <LoadingOverlay />}
       <div class="space"></div>
 
       <div class="container-fluid st-bg">
@@ -2525,134 +2521,7 @@ const SightSeeingTour = () => {
                 <Link to="/faq" class="faq-btn">
                   FAQ
                 </Link>
-                <div class="row">
-                  <div class="form-group col-md-12 col-sm-12">
-                    <div class="col-md-4">
-                      <label for="name">
-                        Name<span class="requ">*</span> :
-                      </label>
-                    </div>
-                    <div class="col-md-8">
-                      <input
-                        name="ctl00$ContentPlaceHolder1$txtName"
-                        type="text"
-                        id="ctl00_ContentPlaceHolder1_txtName"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-group col-md-12 col-sm-12">
-                    <div class="col-md-4">
-                      <label for="email">
-                        Email<span class="requ">*</span> :
-                      </label>
-                    </div>
-                    <div class="col-md-8">
-                      <input
-                        name="ctl00$ContentPlaceHolder1$txtEmail"
-                        type="text"
-                        id="ctl00_ContentPlaceHolder1_txtEmail"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-group col-md-12 col-sm-12">
-                    <div class="col-md-4">
-                      <label for="email">
-                        Reconfirm Email<span class="requ">*</span> :
-                      </label>
-                    </div>
-                    <div class="col-md-8">
-                      <input
-                        name="ctl00$ContentPlaceHolder1$txtReconfirmEmail"
-                        type="text"
-                        id="ctl00_ContentPlaceHolder1_txtReconfirmEmail"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-group col-md-12 col-sm-12">
-                    <div class="col-md-4">
-                      <label for="number">
-                        Phone Number<span class="requ">*</span> :
-                      </label>
-                    </div>
-                    <div class="col-md-8">
-                      <input
-                        name="ctl00$ContentPlaceHolder1$txtPhoneNumber"
-                        type="text"
-                        id="ctl00_ContentPlaceHolder1_txtPhoneNumber"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-group col-md-12 col-sm-12">
-                    <div class="col-md-4">
-                      <span style={{color: 'white'}}>Number of Passengers:</span>
-                    </div>
-                    <div class="col-md-8">
-                      <input
-                        name="ctl00$ContentPlaceHolder1$txtNumberofPassengers"
-                        type="text"
-                        id="ctl00_ContentPlaceHolder1_txtNumberofPassengers"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-group col-md-12 col-sm-12">
-                    <div class="col-md-4">
-                      <label for="number">Date :</label>
-                    </div>
-                    <div class="col-md-8">
-                      <input
-                        name="ctl00$ContentPlaceHolder1$txtDate"
-                        type="text"
-                        id="ctl00_ContentPlaceHolder1_txtDate"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-group col-md-12 col-sm-12">
-                    <div class="col-md-4">
-                      <label for="req">
-                        Tell Us About Your Requirement
-                        <span class="requ">*</span>{" "}
-                      </label>
-                      <p>Pick up dates, from where to where and etc...</p>
-                    </div>
-                    <div class="col-md-8">
-                      <textarea
-                        name="ctl00$ContentPlaceHolder1$txtSpecial"
-                        rows="2"
-                        cols="20"
-                        id="ctl00_ContentPlaceHolder1_txtSpecial"
-                      ></textarea>
-                      <span
-                        id="ctl00_ContentPlaceHolder1_RequiredFieldValidator3"
-                        style={{color:'red',display:'none'}}
-                      >
-                        *
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 btndiv">
-                    <a
-                      id="ctl00_ContentPlaceHolder1_btnsubmit"
-                      class="btn"
-                      href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btnsubmit&#39;,&#39;&#39;)"
-                    >
-                      SUBMIT
-                    </a>
-                  </div>
-                </div>
+                <TransferInquiryForm setLoadingOverlay={setLoadingOverlay} transfer_type="sightseeing"/>
               </div>
             </div>
           </div>

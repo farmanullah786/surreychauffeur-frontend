@@ -1,6 +1,6 @@
 import React from "react";
-import AppLayout from "../components/applayout/AppLayout";
-const ResetPassword = () => {
+import AppLayout from "../../components/applayout/AppLayout";
+const PasswordResetComplete = () => {
   return (
     <AppLayout>
       <h3 style={{ color: "green", padding: "20px" }}>
@@ -9,5 +9,4 @@ const ResetPassword = () => {
     </AppLayout>
   );
 };
-
-export default ResetPassword;
+export default PasswordResetComplete;

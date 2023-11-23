@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AppLayout from "../components/applayout/AppLayout";
+import AppLayout from "../../components/applayout/AppLayout";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
@@ -35,7 +35,7 @@ const Feedback = (props) => {
             </span>
           </div>
           <Link
-            to="/add-feedback"
+            to="/feedback-form"
             className="big-link"
             style={{ textAlign: "right" }}
           >

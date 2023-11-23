@@ -37,7 +37,7 @@ const SiteMap = () => {
                 <Link to="/station-transfort">Station Transfer</Link>
               </li>
               <li>
-                <Link to="/feedback">Feedback Section</Link>
+                <Link to="/feedbacks">Feedback Section</Link>
               </li>
               <li>
                 <Link to="#">Footer</Link>

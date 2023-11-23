@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import AppLayout from "../components/applayout/AppLayout";
 import { Link } from "react-router-dom";
-import TransferInquiry from "../components/forms/TransferInquiry";
 import LoadingOverlay from "../components/shared/LoadingOverlay";
+import TransferInquiryForm from "../components/forms/TransferInquiryForm";
 
 const GroupTransfer = () => {
   const [loadingOverlay, setLoadingOverlay] = useState(false);
@@ -36,7 +36,7 @@ const GroupTransfer = () => {
                   <Link to="/faq" className="faq-btn">
                     FAQ
                   </Link>
-                  <TransferInquiry setLoadingOverlay={setLoadingOverlay} transfer_type="group"/>
+                  <TransferInquiryForm setLoadingOverlay={setLoadingOverlay} transfer_type="group"/>
                 </div>
               </div>
             </div>

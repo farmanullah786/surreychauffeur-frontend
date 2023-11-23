@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import AppLayout from "../components/applayout/AppLayout";
-import BookingForm from "../components/BookingForm";
-import DiscountBanner from "../components/shared/DiscountBanner";
+import AppLayout from "../../components/applayout/AppLayout";
+import BookingForm from "../../components/BookingForm";
+import DiscountBanner from "../../components/shared/DiscountBanner";
 
-const StationTransportInformation = () => {
+const StationTransportInfo = () => {
   useEffect(() => {
     document.querySelector("#ctl00_dvMainContainer")?.classList.add("arp");
   }, []);
@@ -54,4 +54,4 @@ const StationTransportInformation = () => {
   );
 };
 
-export default StationTransportInformation;
+export default StationTransportInfo;
