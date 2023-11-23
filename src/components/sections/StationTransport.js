@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const StationTransportSection = () => {
+const StationTransport = () => {
   return (
     <div
       className="container-fluid no-padding station-transport transport"
@@ -29,4 +29,4 @@ const StationTransportSection = () => {
   );
 };
 
-export default StationTransportSection;
+export default StationTransport;

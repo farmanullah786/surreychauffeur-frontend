@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import AppLayout from "./applayout/AppLayout";
+import AppLayout from "../applayout/AppLayout";
 import { jwtDecode as jwt_decode } from "jwt-decode";
 import { useForm } from "react-hook-form";
-import LoadingOverlay from "./LoadingOverlay";
+import LoadingOverlay from "../shared/LoadingOverlay";
 import { connect } from "react-redux";
-import * as actionCreators from "../store/actions/index";
+import * as actionCreators from "../../store/actions/index";
 
-const PersonalDetailsForm = (props) => {
+const Profile = (props) => {
   const isLogged = localStorage.getItem("authToken") ?? null;
   const user = isLogged && jwt_decode(isLogged);
   const [isFormSubmittedSuccesful, setIsFormSubmittedSuccesful] =
@@ -411,4 +411,4 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(PersonalDetailsForm);
+)(Profile);

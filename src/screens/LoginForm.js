@@ -3,7 +3,7 @@ import AppLayout from "../components/applayout/AppLayout";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { postRequestWithOutToken } from "../helpers/methods";
-import LoadingOverlay from "../components/LoadingOverlay";
+import LoadingOverlay from "../components/shared/LoadingOverlay";
 
 const LoginForm = () => {
   const navigate = useNavigate();

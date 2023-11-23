@@ -3,7 +3,7 @@ import AppLayout from "../components/applayout/AppLayout";
 import { postRequestWithOutToken } from "../helpers/methods";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import LoadingOverlay from "../components/LoadingOverlay";
+import LoadingOverlay from "../components/shared/LoadingOverlay";
 const ForgottenPassword = () => {
   const navigate = useNavigate();
   const [loadingOverlay, setLoadingOverlay] = useState(false);

@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import AppLayout from "../components/applayout/AppLayout";
-import ShowCase from "../components/ShowCase";
-import DiscountBannerSection from "../components/DiscountBannerSection";
-import AboutUsSection from "../components/AboutUsSection";
-import AirportTransportSection from "../components/AirportTransportSection";
-import CruisePortTransportSection from "../components/CruisePortTransportSection";
-import StationTransportSection from "../components/StationTransportSection";
-import TestimonialsSection from "../components/TestimonialsSection";
-import Loader from "../components/Loader";
+import LandingPage from "../components/sections/LandingPage";
+import CruisePortTransport from "../components/sections/CruisePortTransport";
+import Testimonials from "../components/sections/Testimonials";
+import Loader from "../components/shared/Loader";
 import InfoBar from "../components/InfoBar";
+import PinkBerryAbout from "../components/sections/PinkBerryAbout";
+import PinkBerryAirport from "../components/sections/PinkBerryAirport";
+import DiscountBannerSection from "../components/sections/DiscountBannerSection";
+import StationTransport from "../components/sections/StationTransport";
 
 const MainFile = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,13 +30,13 @@ const MainFile = () => {
         <>
           <InfoBar />
           <AppLayout>
-            <ShowCase />
+            <LandingPage />
             <DiscountBannerSection />
-            <AboutUsSection />
-            <AirportTransportSection />
-            <CruisePortTransportSection />
-            <StationTransportSection />
-            <TestimonialsSection />
+            <PinkBerryAbout />
+            <PinkBerryAirport />
+            <CruisePortTransport />
+            <StationTransport/>
+            <Testimonials />
           </AppLayout>
         </>
       )}

@@ -1,6 +1,6 @@
 import React from "react";
 import AppLayout from "../components/applayout/AppLayout";
-import CruisePortTransportSection from "../components/CruisePortTransportSection";
+import CruisePortTransportSection from "../components/sections/CruisePortTransport";
 
 const CruisePortTransport = () => {
   return (

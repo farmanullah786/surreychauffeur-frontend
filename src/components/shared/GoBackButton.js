@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const BackButton = () => {
+const GoBackButton = () => {
   const navigate = useNavigate();
 
   const handleGoBack = () => {
@@ -19,4 +19,4 @@ const BackButton = () => {
   );
 };
 
-export default BackButton;
+export default GoBackButton;

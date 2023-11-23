@@ -1,6 +1,6 @@
 import React from 'react'
 import AppLayout from '../components/applayout/AppLayout'
-import StationTransportSection from '../components/StationTransportSection'
+import StationTransportSection from '../components/sections/StationTransport'
 
 const StationTransport = () => {
   return (

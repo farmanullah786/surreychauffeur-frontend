@@ -1,6 +1,6 @@
 import React from "react";
 
-const BannerComponent = (props) => {
+const DiscountBanner = (props) => {
   return (
     <div>
       <div className="space"></div>
@@ -25,7 +25,6 @@ const BannerComponent = (props) => {
             </div>
           </div>
         </div>
-        {/* Section 1 */}
         <div className="container-fluid no-padding discount-banner-inner">
           <div className="section-padding"></div>
           {/* Container */}
@@ -35,13 +34,11 @@ const BannerComponent = (props) => {
               you hire at the airports, seaports, stations, or on the streets!
             </p>
           </div>
-          {/* Container/- */}
           <div className="section-padding"></div>
         </div>
-        {/* Section 1/- */}
       </div>
     </div>
   );
 };
 
-export default BannerComponent;
+export default DiscountBanner;

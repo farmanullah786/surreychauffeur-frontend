@@ -1,8 +1,8 @@
 import React from "react";
-import NavigationBar from "./NavigationBar";
 import { Link, useNavigate } from "react-router-dom";
 import { jwtDecode as jwt_decode } from "jwt-decode";
 
+import NavigationBar from '../components/shared/NavigationBar'
 const Header = () => {
   const navigate = useNavigate();
 

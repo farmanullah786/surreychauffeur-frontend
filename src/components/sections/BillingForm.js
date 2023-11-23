@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import AppLayout from "./applayout/AppLayout";
+import AppLayout from "../applayout/AppLayout";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import LoadingOverlay from "./LoadingOverlay";
-import { postRequest } from "../helpers/methods";
-import BackButton from "./BackButton";
+import { postRequest } from "../../helpers/methods";
+import GoBackButton from "../shared/GoBackButton";
+
+import LoadingOverlay from "../shared/LoadingOverlay";
 const BillingForm = () => {
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
@@ -71,8 +72,6 @@ const BillingForm = () => {
       }, 2000);
     }
   };
-  // Add your form submission logic here
-  // You can use the state variables for the form data
 
   return (
     <AppLayout>
@@ -468,7 +467,7 @@ const BillingForm = () => {
                 </div>
               </div>
             </form>
-            <BackButton/>
+            <GoBackButton/>
           </div>
         </div>
       </section>

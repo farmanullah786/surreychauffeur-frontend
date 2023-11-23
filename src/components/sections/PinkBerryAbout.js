@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const AboutUsSection = () => {
+const PinkBerryAbout = () => {
   const titleStyle = {
     fontStyle: "inherit",
     fontVariant: "inherit",
@@ -18,15 +18,15 @@ const AboutUsSection = () => {
   };
 
   return (
-    <div class="container-fluid no-padding about-us" id="about">
-      <div class="col-md-6">
-        <div class="content-holder">
+    <div className="container-fluid no-padding about-us" id="about">
+      <div className="col-md-6">
+        <div className="content-holder">
           <h3>
-            About <span class="pink-text">Pinkberry Cars</span>
+            About <span className="pink-text">Pinkberry Cars</span>
           </h3>
           <p>
-            <div class="home-content">
-              <h2 class="item-title" itemprop="name">
+            <div className="home-content">
+              <h2 className="item-title" itemprop="name">
                 <p
                   style={{
                     margin: "0px",
@@ -173,18 +173,18 @@ const AboutUsSection = () => {
               <br />
             </div>
           </p>
-          <p class="hide-content">
+          <p className="hide-content">
             We are specialised in providing private hire transfers (car service
             with the driver), services for to and from all London Airports, UK
             Cruise Ports, Train/Tube Stations, to and from anywhere in the UK.
           </p>
-          <Link to="/about-pink-berry" class="read-more-btn2" >
+          <Link to="/about-pink-berry" className="read-more-btn2">
             Read More
           </Link>
         </div>
       </div>
-      <div class="col-md-6 no-padding">
-        <div class="video-wrapper">
+      <div className="col-md-6 no-padding">
+        <div className="video-wrapper">
           <video
             src={
               process.env.PUBLIC_URL +
@@ -201,4 +201,4 @@ const AboutUsSection = () => {
   );
 };
 
-export default AboutUsSection;
+export default PinkBerryAbout;

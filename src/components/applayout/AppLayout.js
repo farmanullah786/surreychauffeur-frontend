@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import StickyContactBar from "../StickyContactBar";
 import Header from "../Header";
-import LoadingIndicator from "../LoadingIndicator";
-import MainFooter from "../MainFooter";
+import LoadingIndicator from '../shared/LoadingIndicator'
+import Footer from "../Footer";
 import CopyrightBar from "../CopyrightBar";
 import AllGetRequests from "../../AllGetRequests";
 
@@ -11,12 +11,11 @@ const AppLayout = (props) => {
     <>
     <AllGetRequests/>
       <StickyContactBar />
-      <div id="ctl00_dvMainContainer" class="main-container">
-        {" "}
+      <div id="ctl00_dvMainContainer" className="main-container">
         <Header />
         <LoadingIndicator />
         <div id="ctl00_UpdatePanel3">{props.children}</div>
-        <MainFooter />
+        <Footer />
         <CopyrightBar />
       </div>
     </>

@@ -335,7 +335,7 @@ legend {
 }
 
 select {
-    width: 126px;
+    width: 126px!important;
 }
 
 input[type="checkbox"] {

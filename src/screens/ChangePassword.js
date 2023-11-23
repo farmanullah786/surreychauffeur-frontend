@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import AppLayout from "../components/applayout/AppLayout";
-import { postRequest, postRequestWithOutToken } from "../helpers/methods";
+import {  postRequestWithOutToken } from "../helpers/methods";
 import { useNavigate, useParams } from "react-router-dom";
-import LoadingOverlay from "../components/LoadingOverlay";
+import LoadingOverlay from "../components/shared/LoadingOverlay";
 import { jwtDecode as jwt_decode } from "jwt-decode";
 const ChangePassword = () => {
   const navigate = useNavigate();

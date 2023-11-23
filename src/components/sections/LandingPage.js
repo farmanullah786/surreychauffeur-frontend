@@ -1,24 +1,15 @@
 import React from "react";
 
-const ShowCase = () => {
+const LandingPage = () => {
   return (
     <>
-      <input
-        type="hidden"
-        name="ctl00$ContentPlaceHolder1$ViaRestart"
-        id="ctl00_ContentPlaceHolder1_ViaRestart"
-        value="0"
-      />
-      <input
-        type="hidden"
-        name="ctl00$ContentPlaceHolder1$IsVia"
-        id="ctl00_ContentPlaceHolder1_IsVia"
-        value="0"
-      />
-
       {/* Photo Slider2 */}
       <div className="container-fluid photos-slider2 no-padding">
-        <div id="photos-slider2" className="carousel slide" data-ride="carousel">
+        <div
+          id="photos-slider2"
+          className="carousel slide"
+          data-ride="carousel"
+        >
           <div className="carousel-inner" role="listbox">
             <div className="item active">
               <img
@@ -95,7 +86,7 @@ const ShowCase = () => {
                         />
                       </span>
                     </div>
-                    <p className="highlight" style={{padding:"10px"}}>
+                    <p className="highlight" style={{ padding: "10px" }}>
                       <span>£5 Off</span> On All Transfers
                     </p>
                   </div>
@@ -177,18 +168,6 @@ const ShowCase = () => {
           </div>
         </div>
 
-        <input
-          type="hidden"
-          name="ctl00$ContentPlaceHolder1$Booking$ViaRestart"
-          id="ctl00_ContentPlaceHolder1_Booking_ViaRestart"
-          value="0"
-        />
-        <input
-          type="hidden"
-          name="ctl00$ContentPlaceHolder1$Booking$IsVia"
-          id="ctl00_ContentPlaceHolder1_Booking_IsVia"
-          value="0"
-        />
         <div id="ctl00_ContentPlaceHolder1_Booking_Update1">
           {/* Booking Form  */}
           <div className="booking-form">
@@ -196,8 +175,8 @@ const ShowCase = () => {
               <div className="col-md-6 full-width">
                 <div className="stm_rent_car_form">
                   <div name="book-taxi" className="book-taxi-form">
-                    <h3>Instant Quote &amp; Booking</h3>
-                    <a href="faq.html" className="faq-btn">
+                    <h3>Instant Quote & Booking</h3>
+                    <a href="faq.aspx" className="faq-btn">
                       FAQ
                     </a>
                     <div className="row">
@@ -205,13 +184,16 @@ const ShowCase = () => {
                         className="form-group col-md-4 col-sm-4"
                         style={{ marginBottom: "4px", paddingBottom: "4px" }}
                       >
-                        <label for="transport_type">Pick-Up Location :</label>
+                        <label htmlFor="transport_type">
+                          Pick-Up Location :
+                        </label>
+                        {/* paste 1 */}
                         <select
                           name="ctl00$ContentPlaceHolder1$Booking$ddlFrom"
                           id="ctl00_ContentPlaceHolder1_Booking_ddlFrom"
                           className="form-control clsddlFrom"
                         >
-                          <option selected="selected" value="&lt;--SELECT-->">
+                          <option selected="selected" value="<--SELECT-->">
                             &lt;--SELECT--&gt;
                           </option>
                           <option value="138">Airport</option>
@@ -227,17 +209,17 @@ const ShowCase = () => {
                       >
                         <label
                           id="ctl00_ContentPlaceHolder1_Booking_lbllocationtype1"
-                          for="transport_type2"
+                          htmlFor="transport_type2"
                           style={{ display: "none !important" }}
                         >
                           Select / Enter
                         </label>
-
+                        {/* paste 2 */}
                         <select
                           name="ctl00$ContentPlaceHolder1$Booking$ddlFromLoc"
                           id="ctl00_ContentPlaceHolder1_Booking_ddlFromLoc"
                           className="form-control clsddlFromLoc"
-                          style={{ display: "none" }}
+                          // style={{ display: "none" }}
                         >
                           <option value="0">&lt;--SELECT--&gt;</option>
                           <option value="6107">Heathrow Airport TW6 1JS</option>
@@ -293,6 +275,7 @@ const ShowCase = () => {
                             Doncaster Airport DN9 3RH
                           </option>
                         </select>
+                        {/* paste 3 */}
                         <select
                           name="ctl00$ContentPlaceHolder1$Booking$ddlFromSeaport"
                           id="ctl00_ContentPlaceHolder1_Booking_ddlFromSeaport"
@@ -322,6 +305,7 @@ const ShowCase = () => {
                             TILBURY CRUISE PORT RM18 7NG
                           </option>
                         </select>
+                        {/* paste 4 */}
                         <select
                           name="ctl00$ContentPlaceHolder1$Booking$ddlFromStation"
                           id="ctl00_ContentPlaceHolder1_Booking_ddlFromStation"
@@ -488,7 +472,7 @@ const ShowCase = () => {
                           <option value="4262">Clapton E5 9JP</option>
                           <option value="4263">Clock House BR3 4PR</option>
                           <option value="4264">
-                            Cobham and Stoke D&#39;Abernon KT11 3BW
+                            Cobham and Stoke D'Abernon KT11 3BW
                           </option>
                           <option value="4265">Cockfosters EN4 0DZ</option>
                           <option value="4266">Colindale NW9 5HR</option>
@@ -962,7 +946,7 @@ const ShowCase = () => {
                             St Pancras Station(Euro Star), London, N1 9AL
                           </option>
                           <option value="4621">
-                            St. James&#39;s Park SW1H 0BD
+                            St. James's Park SW1H 0BD
                           </option>
                           <option value="4622">St. Johns Wood NW8 6DN</option>
                           <option value="4623">St. Pauls EC2V 6AA</option>
@@ -1139,7 +1123,6 @@ const ShowCase = () => {
                           <option value="4749">Worcester Park KT4 7ND</option>
                           <option value="6131">York YO24 1AB</option>
                         </select>
-
                         <input
                           name="ctl00$ContentPlaceHolder1$Booking$txtFrom"
                           type="text"
@@ -1158,7 +1141,6 @@ const ShowCase = () => {
                     <div className="row">
                       <div id="TextBoxContainer">
                         {/* Textboxes will be added here */}
-
                         <div
                           id="ctl00_ContentPlaceHolder1_Booking_rptVias"
                           className="col-md-12 col-sm-12"
@@ -1171,13 +1153,16 @@ const ShowCase = () => {
                         className="form-group col-md-4 col-sm-4"
                         style={{ marginBottom: "4px", paddingBottom: "4px" }}
                       >
-                        <label for="transport_type3">Drop-Off Location :</label>
+                        <label htmlFor="transport_type3">
+                          Drop-Off Location :
+                        </label>
+                        {/* paste 5 */}
                         <select
                           name="ctl00$ContentPlaceHolder1$Booking$ddlTo"
                           id="ctl00_ContentPlaceHolder1_Booking_ddlTo"
                           className="form-control clsddlTo"
                         >
-                          <option selected="selected" value="&lt;--SELECT-->">
+                          <option selected="selected" value="<--SELECT-->">
                             &lt;--SELECT--&gt;
                           </option>
                           <option value="138">Airport</option>
@@ -1193,12 +1178,12 @@ const ShowCase = () => {
                       >
                         <label
                           id="ctl00_ContentPlaceHolder1_Booking_lbllocationtype2"
-                          for="transport_type"
+                          htmlFor="transport_type"
                           style={{ display: "none !important" }}
                         >
                           Select / Enter
                         </label>
-
+                        {/* paste 6 */}
                         <select
                           name="ctl00$ContentPlaceHolder1$Booking$ddlToLoc"
                           id="ctl00_ContentPlaceHolder1_Booking_ddlToLoc"
@@ -1259,6 +1244,7 @@ const ShowCase = () => {
                             Doncaster Airport DN9 3RH
                           </option>
                         </select>
+                        {/* paste 7 */}
                         <select
                           name="ctl00$ContentPlaceHolder1$Booking$ddlToSeaport"
                           id="ctl00_ContentPlaceHolder1_Booking_ddlToSeaport"
@@ -1288,6 +1274,7 @@ const ShowCase = () => {
                             TILBURY CRUISE PORT RM18 7NG
                           </option>
                         </select>
+                        {/* paste 8 */}
                         <select
                           name="ctl00$ContentPlaceHolder1$Booking$ddlToStation"
                           id="ctl00_ContentPlaceHolder1_Booking_ddlToStation"
@@ -1454,7 +1441,7 @@ const ShowCase = () => {
                           <option value="4262">Clapton E5 9JP</option>
                           <option value="4263">Clock House BR3 4PR</option>
                           <option value="4264">
-                            Cobham and Stoke D&#39;Abernon KT11 3BW
+                            Cobham and Stoke D'Abernon KT11 3BW
                           </option>
                           <option value="4265">Cockfosters EN4 0DZ</option>
                           <option value="4266">Colindale NW9 5HR</option>
@@ -1928,7 +1915,7 @@ const ShowCase = () => {
                             St Pancras Station(Euro Star), London, N1 9AL
                           </option>
                           <option value="4621">
-                            St. James&#39;s Park SW1H 0BD
+                            St. James's Park SW1H 0BD
                           </option>
                           <option value="4622">St. Johns Wood NW8 6DN</option>
                           <option value="4623">St. Pauls EC2V 6AA</option>
@@ -2105,7 +2092,6 @@ const ShowCase = () => {
                           <option value="4749">Worcester Park KT4 7ND</option>
                           <option value="6131">York YO24 1AB</option>
                         </select>
-
                         <input
                           name="ctl00$ContentPlaceHolder1$Booking$txtTo"
                           type="text"
@@ -2143,15 +2129,15 @@ const ShowCase = () => {
                         style={{ display: "none" }}
                       >
                         <div className="form-group col-md-6 col-sm-6 col-xs-12">
-                          <label for="datepicker-l">Pickup Date :</label>
+                          <label htmlFor="datepicker-l">Pickup Date :</label>
                           <div id="datepicker-outer-l" className="input-group">
                             <input
                               name="ctl00$ContentPlaceHolder1$Booking$txtPickupDate"
                               type="text"
                               id="ctl00_ContentPlaceHolder1_Booking_txtPickupDate"
-                              className="form-control date_picker"
+                              className="form-control date_picker hasDatepicker"
                               placeholder="DD/MM/YYYY"
-                              readonly="readonly"
+                              readOnly="readonly"
                             />
                           </div>
                         </div>
@@ -2161,15 +2147,15 @@ const ShowCase = () => {
                         style={{ display: "none" }}
                       >
                         <div className="form-group col-md-6 col-sm-6 col-xs-12">
-                          <label for="datepicker-r">Return Date :</label>
+                          <label htmlFor="datepicker-r">Return Date :</label>
                           <div id="datepicker-outer-r" className="input-group">
                             <input
                               name="ctl00$ContentPlaceHolder1$Booking$txtReturnDate"
                               type="text"
                               id="ctl00_ContentPlaceHolder1_Booking_txtReturnDate"
-                              className="form-control date_picker"
+                              className="form-control date_picker hasDatepicker"
                               placeholder="DD/MM/YYYY"
-                              readonly="readonly"
+                              readOnly="readonly"
                             />
                           </div>
                         </div>
@@ -2191,7 +2177,9 @@ const ShowCase = () => {
                           type="submit"
                           name="ctl00$ContentPlaceHolder1$Booking$btnSubmit"
                           value="Get Quote"
-                          onclick="return Search_ValidateControls();"
+                          onClick={() => {
+                            // return Search_ValidateControls();
+                          }}
                           id="ctl00_ContentPlaceHolder1_Booking_btnSubmit"
                           className="btn"
                         />
@@ -2204,532 +2192,7 @@ const ShowCase = () => {
           </div>
           {/* Booking Form  */}
 
-          <script
-            src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
-            type="text/javascript"
-          ></script>
-          <script
-            src="../ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"
-            type="text/javascript"
-          ></script>
-
-          <input
-            type="hidden"
-            name="ctl00$ContentPlaceHolder1$Booking$hdfViaPoints"
-            id="ctl00_ContentPlaceHolder1_Booking_hdfViaPoints"
-            value="0"
-          />
-
-          {/* <style>
-							input.date_picker {
-								text-align: left;
-								background-image: url("images/icon/date-picker.png");
-								background-position: right center;
-								background-repeat: no-repeat;
-								padding-right: 18px;
-								width: 78px;
-							}
-
-							.ui-datepicker {
-								width: 17em;
-								padding: .2em .2em 0;
-								display: none;
-								z-index: 2000 !important;
-							}
-
-							.ui-widget-content {
-								z-index: 9999999999 !important;
-							}
-
-
-							.ui-menu {
-								overflow: scroll;
-								height: 250px !important;
-							}
-						</style> */}
-
-          {/* <script type="text/javascript">
-
-							function DisplayMessage() {
-								alert("Website could'nt identify the location to calculate the price.\r\nPlease CALL or EMAIL us to book.");
-								return false;
-							}
-
-							$(window).bind("pageshow", function () {
-
-								$('[id$=ddlFrom]').val('<--SELECT-->');
-								$('[id$=ddlTo]').val('<--SELECT-->');
-								$('[id$=txtFrom]').val('');
-								$('[id$=txtTo]').val('');
-								$('.clsddlFromLoc').val('0');
-								$('.clsddlFromStation').val('0');
-								$('.clsddlFromSeaport').val('0');
-								$('.clsddlToLoc').val('0');
-								$('.clsddlToStation').val('0');
-								$('.clsddlToSeaport').val('0');
-								$('[id$=rbtnoneway]').prop('checked', false);
-								$('[id$=rbtntwoway]').prop('checked', false);
-							});
-
-							function pageLoad() {
-
-
-
-								$('.clstxtFrom').keydown(function () {
-
-									$(this).autocomplete({
-										source: function (request, response) {
-											$.ajax({
-												//beforeSend: function() { GoogleCall($(obj).val(), TypeId); },
-												url: "AutoComplete.asmx/GetDestination",
-												data: "{ 'prefixText': '" + request.term + "','contextKey': '" + $('.clsddlFrom :selected').html() + "'}",
-												dataType: "json",
-												type: "POST",
-												contentType: "application/json; charset=utf-8",
-												success: function (data) {
-													if (data.d == "") {
-														response($.map(savings_data, function (item) {
-															return {
-																label: item,
-																val: item
-															}
-														}))
-
-													} else {
-														response($.map(data.d, function (item) {
-															return {
-																label: item,
-																val: item
-															}
-														}))
-													}
-												},
-												error: function (response) {
-													//  alert(response.responseText);
-												},
-												failure: function (response) {
-													//alert(response.responseText);
-												}
-											});
-										},
-										search: function (event, ui) {
-
-										},
-										select: function (e, i) {
-										},
-										minLength: 2
-									});
-
-								});
-
-								$('.clstxtTo').keydown(function () {
-
-									$(this).autocomplete({
-										source: function (request, response) {
-											$.ajax({
-												//beforeSend: function() { GoogleCall($(obj).val(), TypeId); },
-												url: "AutoComplete.asmx/GetDestination",
-												data: "{ 'prefixText': '" + request.term + "','contextKey': '" + $('.clsddlTo :selected').html() + "'}",
-												dataType: "json",
-												type: "POST",
-												contentType: "application/json; charset=utf-8",
-												success: function (data) {
-													if (data.d == "") {
-														response($.map(savings_data, function (item) {
-															return {
-																label: item,
-																val: item
-															}
-														}))
-
-													} else {
-														response($.map(data.d, function (item) {
-															return {
-																label: item,
-																val: item
-															}
-														}))
-													}
-												},
-												error: function (response) {
-													//  alert(response.responseText);
-												},
-												failure: function (response) {
-													//alert(response.responseText);
-												}
-											});
-										},
-										search: function (event, ui) {
-
-										},
-										select: function (e, i) {
-										},
-										minLength: 2
-									});
-
-								});
-
-								$('.clsddlFrom').change(function () {
-
-									$('.clsddlFromLoc').css('display', 'none');
-									$('.clstxtFrom').css('display', 'none');
-									$('.clsddlFromSeaport').css('display', 'none');
-									$('.clsddlFromStation').css('display', 'none');
-									$('[id$=lbllocationtype1]').attr('style', 'display:none');
-
-									if ($(".clsddlFrom option[value=" + $(".clsddlFrom option:selected").val() + "]").text() == "Airport") {
-										$('.clsddlFromLoc').css('display', 'block');
-										$('.clstxtFrom').css('display', 'none');
-										$('.clsddlFromSeaport').css('display', 'none');
-										$('.clsddlFromStation').css('display', 'none');
-										$('[id$=lbllocationtype1]').attr('style', 'display:block');
-									}
-									if ($(".clsddlFrom option[value=" + $(".clsddlFrom option:selected").val() + "]").text() == "Postcode") {
-										$('.clsddlFromLoc').css('display', 'none');
-										$('.clstxtFrom').css('display', 'block');
-										$('.clsddlFromSeaport').css('display', 'none');
-										$('.clsddlFromStation').css('display', 'none');
-										//$find('ACE1').set_contextKey("postcode");
-										$('[id$=lbllocationtype1]').attr('style', 'display:block');
-									}
-									if ($(".clsddlFrom option[value=" + $(".clsddlFrom option:selected").val() + "]").text() == "Address") {
-										$('.clsddlFromLoc').css('display', 'none');
-										$('.clstxtFrom').css('display', 'block');
-										$('.clsddlFromSeaport').css('display', 'none');
-										$('.clsddlFromStation').css('display', 'none');
-										//$find('ACE1').set_contextKey("address");
-										$('[id$=lbllocationtype1]').attr('style', 'display:block');
-									}
-									if ($(".clsddlFrom option[value=" + $(".clsddlFrom option:selected").val() + "]").text() == "Sea port/Cruise port") {
-										$('.clsddlFromLoc').css('display', 'none');
-										$('.clstxtFrom').css('display', 'none');
-										$('.clsddlFromSeaport').css('display', 'block');
-										$('.clsddlFromStation').css('display', 'none');
-										$('[id$=lbllocationtype1]').attr('style', 'display:block');
-									}
-									if ($(".clsddlFrom option[value=" + $(".clsddlFrom option:selected").val() + "]").text() == "Stations") {
-										$('.clsddlFromLoc').css('display', 'none');
-										$('.clstxtFrom').css('display', 'none');
-										$('.clsddlFromSeaport').css('display', 'none');
-										$('.clsddlFromStation').css('display', 'block');
-										$('[id$=lbllocationtype1]').attr('style', 'display:block');
-									}
-								});
-
-								$('.clsddlTo').change(function () {
-
-									$('.clsddlToLoc').css('display', 'none');
-									$('.clstxtTo').css('display', 'none');
-									$('.clsddlToSeaport').css('display', 'none');
-									$('.clsddlToStation').css('display', 'none');
-									$('[id$=lbllocationtype2]').attr('style', 'display:none');
-
-									if ($(".clsddlTo option[value=" + $(".clsddlTo option:selected").val() + "]").text() == "Airport") {
-										$('.clsddlToLoc').css('display', 'block');
-										$('.clstxtTo').css('display', 'none');
-										$('.clsddlToSeaport').css('display', 'none');
-										$('.clsddlToStation').css('display', 'none');
-										$('[id$=lbllocationtype2]').attr('style', 'display:block');
-									}
-									if ($(".clsddlTo option[value=" + $(".clsddlTo option:selected").val() + "]").text() == "Postcode") {
-										$('.clsddlToLoc').css('display', 'none');
-										$('.clstxtTo').css('display', 'block');
-										$('.clsddlToSeaport').css('display', 'none');
-										$('.clsddlToStation').css('display', 'none');
-										//$find('ACE2').set_contextKey("postcode");
-										$('[id$=lbllocationtype2]').attr('style', 'display:block');
-									}
-									if ($(".clsddlTo option[value=" + $(".clsddlTo option:selected").val() + "]").text() == "Address") {
-										$('.clsddlToLoc').css('display', 'none');
-										$('.clstxtTo').css('display', 'block');
-										$('.clsddlToSeaport').css('display', 'none');
-										$('.clsddlToStation').css('display', 'none');
-										//$find('ACE2').set_contextKey("address");
-										$('[id$=lbllocationtype2]').attr('style', 'display:block');
-									}
-									if ($(".clsddlTo option[value=" + $(".clsddlTo option:selected").val() + "]").text() == "Sea port/Cruise port") {
-										$('.clsddlToLoc').css('display', 'none');
-										$('.clstxtTo').css('display', 'none');
-										$('.clsddlToSeaport').css('display', 'block');
-										$('.clsddlToStation').css('display', 'none');
-										$('[id$=lbllocationtype2]').attr('style', 'display:block');
-									}
-									if ($(".clsddlTo option[value=" + $(".clsddlTo option:selected").val() + "]").text() == "Stations") {
-										$('.clsddlToLoc').css('display', 'none');
-										$('.clstxtTo').css('display', 'none');
-										$('.clsddlToSeaport').css('display', 'none');
-										$('.clsddlToStation').css('display', 'block');
-										$('[id$=lbllocationtype2]').attr('style', 'display:block');
-									}
-								});
-
-								$('[id$=txtPickupDate]').datepicker(
-									{
-										minDate: -0,
-										dateFormat: 'd MM yy',
-										onSelect: function (dateText) {
-
-											var newDate = $(this).datepicker('getDate');
-
-											if ($('[id$=txtReturnDate]').val() != '' && (new Date(dateText) > new Date($('[id$=txtReturnDate]').val()))) {
-												$('[id$=txtReturnDate]').val('');
-											}
-
-
-											$('[id$=txtReturnDate]').datepicker('option', 'minDate', newDate);
-
-										}
-									}
-								);
-
-								$('[id$=txtReturnDate]').datepicker(
-									{
-										minDate: -0,
-										dateFormat: 'd MM yy',
-										onSelect: function (dateText) {
-
-											if ($('[id$=txtPickupDate]').val() != '' && (new Date(dateText) < new Date($('[id$=txtPickupDate]').val()))) {
-												$('[id$=txtReturnDate]').val('');
-											}
-
-										}
-									}
-
-								);
-
-								$('.viabtn').click(function () {
-
-									var div = $("<div />");
-									div.html(GetDynamicTextBox(""));
-									$("#TextBoxContainer").append(div);
-
-									$('#TextBoxContainer .crossbtn').click(function () {
-
-										$(this).parent().remove();
-									});
-
-									$('#TextBoxContainer #txtViaPoint').keydown(function () {
-
-										$(this).autocomplete({
-											source: function (request, response) {
-												$.ajax({
-													//beforeSend: function() { GoogleCall($(obj).val(), TypeId); },
-													url: "AutoComplete.asmx/GetDestination",
-													data: "{ 'prefixText': '" + request.term + "','contextKey': 'address'}",
-													dataType: "json",
-													type: "POST",
-													contentType: "application/json; charset=utf-8",
-													success: function (data) {
-														if (data.d == "") {
-															response($.map(savings_data, function (item) {
-																return {
-																	label: item,
-																	val: item
-																}
-															}))
-
-														} else {
-															response($.map(data.d, function (item) {
-																return {
-																	label: item,
-																	val: item
-																}
-															}))
-														}
-													},
-													error: function (response) {
-														//  alert(response.responseText);
-													},
-													failure: function (response) {
-														//alert(response.responseText);
-													}
-												});
-											},
-											search: function (event, ui) {
-
-											},
-											select: function (e, i) {
-											},
-											minLength: 2
-										});
-
-									});
-
-
-
-
-
-									return false;
-								});
-
-								if ($('[id$=hdfViaPoints]').val() != '0' && $('[id$=hdfViaPoints]').val() != '') {
-									var array = $('[id$=hdfViaPoints]').val().split('|');
-
-									for (var index = 1; index <= array.length; index++) {
-										if (array[parseInt(index) - 1] != 'undefined') {
-											$('[id$=btnAddVia]').click();
-											$('.clsAddVia').eq(index - 1).find('#txtViaPoint').val(array[parseInt(index) - 1]);
-										}
-
-									}
-								}
-							}
-
-							function GetDynamicTextBox(value) {
-								return '<div className="clsAddVia"><div className="col-md-12"><input name = "DynamicTextBox" type="text" id="txtViaPoint" value = "' + value + '" className="form-control adviafld" style="width:500px" />' +
-									'<input type="button" className="DeleteButton crossbtn" /></div></div>'
-							}
-
-							function Search_ValidateControls() {
-
-								var Ctl_ddlFrom = document.getElementById('ctl00_ContentPlaceHolder1_Booking_ddlFrom');
-								var Ctl_ddlTo = document.getElementById('ctl00_ContentPlaceHolder1_Booking_ddlTo');
-
-
-								if (!IsComboBoxSelected(document.getElementById("ctl00_ContentPlaceHolder1_Booking_ddlFrom"), "Pickup Location")) return false;
-
-
-								if (Ctl_ddlFrom.options[Ctl_ddlFrom.selectedIndex].text == "Address" || Ctl_ddlFrom.options[Ctl_ddlFrom.selectedIndex].text == "Postcode") {
-									if (!IsEmpty(document.getElementById("ctl00_ContentPlaceHolder1_Booking_txtFrom"), "Pick Up Address")) return false;
-								}
-								else {
-
-									if (Ctl_ddlFrom.options[Ctl_ddlFrom.selectedIndex].text == "Stations") {
-										if (!IsComboBoxSelected(document.getElementById("ctl00_ContentPlaceHolder1_Booking_ddlFromStation"), "Pick Up")) return false;
-
-									}
-									else
-										if (Ctl_ddlFrom.options[Ctl_ddlFrom.selectedIndex].text == "Sea port/Cruise port") {
-											if (!IsComboBoxSelected(document.getElementById("ctl00_ContentPlaceHolder1_Booking_ddlFromSeaport"), "Pick Up")) return false;
-
-										}
-										else
-											if (Ctl_ddlFrom.options[Ctl_ddlFrom.selectedIndex].text == "Airport") {
-												if (!IsComboBoxSelected(document.getElementById("ctl00_ContentPlaceHolder1_Booking_ddlFromLoc"), "Pick Up")) return false;
-
-											}
-
-
-
-								}
-
-								if (!IsComboBoxSelected(document.getElementById("ctl00_ContentPlaceHolder1_Booking_ddlTo"), "Drop Off Location")) return false;
-
-								if (Ctl_ddlTo.options[Ctl_ddlTo.selectedIndex].text == "Address" || Ctl_ddlTo.options[Ctl_ddlTo.selectedIndex].text == "Postcode") {
-									if (!IsEmpty(document.getElementById("ctl00_ContentPlaceHolder1_Booking_txtTo"), "Destination Address")) return false;
-								}
-								else {
-
-									if (Ctl_ddlTo.options[Ctl_ddlTo.selectedIndex].text == "Stations") {
-										if (!IsComboBoxSelected(document.getElementById("ctl00_ContentPlaceHolder1_Booking_ddlToStation"), "Destination")) return false;
-
-									}
-									else
-										if (Ctl_ddlTo.options[Ctl_ddlTo.selectedIndex].text == "Sea port/Cruise port") {
-											if (!IsComboBoxSelected(document.getElementById("ctl00_ContentPlaceHolder1_Booking_ddlToSeaport"), "Destination")) return false;
-
-										}
-										else
-											if (Ctl_ddlTo.options[Ctl_ddlTo.selectedIndex].text == "Airport") {
-												if (!IsComboBoxSelected(document.getElementById("ctl00_ContentPlaceHolder1_Booking_ddlToLoc"), "Destination")) return false;
-
-											}
-
-								}
-
-								if (document.getElementById('ctl00_ContentPlaceHolder1_Booking_rbtntwoway').checked == false && document.getElementById('ctl00_ContentPlaceHolder1_Booking_rbtnoneway').checked == false) {
-
-									alert('Please select the journey type. One way or Return Way');
-									return false;
-								}
-
-
-								if (document.getElementById('ctl00_ContentPlaceHolder1_Booking_rbtnoneway').checked) {
-
-									if (!IsEmpty(document.getElementById("ctl00_ContentPlaceHolder1_Booking_txtPickupDate"), "Pickup Date")) return false;
-
-								}
-
-								if (document.getElementById('ctl00_ContentPlaceHolder1_Booking_rbtntwoway').checked) {
-
-									if (!IsEmpty(document.getElementById("ctl00_ContentPlaceHolder1_Booking_txtPickupDate"), "Pickup Date")) return false;
-									if (!IsEmpty(document.getElementById("ctl00_ContentPlaceHolder1_Booking_txtReturnDate"), "Return Date")) return false;
-								}
-
-
-								$('[id$=hdfViaPoints]').val('0');
-
-								var isVia = true;
-
-								$(".clsAddVia").each(function (index) {
-
-									var Via = $(this).find('#txtViaPoint').val();
-									if (Via != '') {
-										if ($('[id$=hdfViaPoints]').val() != '0') {
-
-											var viapoints = $('[id$=hdfViaPoints]').val();
-											$('[id$=hdfViaPoints]').val(viapoints + "|" + Via);
-										}
-										else {
-											$('[id$=hdfViaPoints]').val(Via);
-										}
-									}
-									else {
-										isVia = false;
-									}
-								});
-
-
-								if (isVia == false) {
-									alert('Kindly Select Via Addresses from suggestion..');
-									return false;
-								}
-
-								return true;
-
-							}
-
-							$('[id$=rbtnoneway]').change(function () {
-
-								if ($('[id$=rbtnoneway]').is(':checked') == true) {
-									$('[id$=pnloneway]').show();
-									$('[id$=pnlreturn]').hide();
-									$('[id$=ViaRestart]').val(0);
-									$('[id$=IsVia]').val(0);
-
-
-									$('[id$=rptVias]').attr('style', 'display:block');
-									$('[id$=btnAddVia]').show();
-									$('[id$=dvAddViaButton]').attr('style', 'display:block');
-
-									$('[id$=rbtntwoway]').prop('checked', false);
-									$('[id$=rbtntwoway]').trigger('change');
-								}
-								else {
-									$('[id$=pnloneway]').hide();
-									$('[id$=rptVias]').attr('style', 'display:none');
-									$('[id$=btnAddVia]').hide();
-									$('[id$=dvAddViaButton]').attr('style', 'display:none');
-								}
-							});
-							$('[id$=rbtntwoway]').change(function () {
-
-								if ($('[id$=rbtntwoway]').is(':checked') == true) {
-
-									$('[id$=pnloneway]').show();
-									$('[id$=pnlreturn]').show();
-									$('[id$=rptVias]').attr('style', 'display:none');
-									$('[id$=btnAddVia]').hide();
-									$('[id$=rbtnoneway]').prop('checked', false);
-									$('[id$=rbtnoneway]').trigger('change');
-								}
-								else {
-
-									$('[id$=pnloneway]').hide();
-									$('[id$=pnlreturn]').hide();
-								}
-							});
-						</script> */}
+          
         </div>
       </div>
       {/* Photo Slider End */}
@@ -2737,4 +2200,4 @@ const ShowCase = () => {
   );
 };
 
-export default ShowCase;
+export default LandingPage;

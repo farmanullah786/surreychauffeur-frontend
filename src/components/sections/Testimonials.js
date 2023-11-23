@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Autoplay, A11y } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,9 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-const TestimonialsSection = () => {
-  useEffect(() => {
-  }, []);
+const Testimonials = () => {
   return (
     <div className="container-fluid no-padding section-6">
       {/* Container */}
@@ -429,4 +427,4 @@ const TestimonialsSection = () => {
   );
 };
 
-export default TestimonialsSection;
+export default Testimonials;

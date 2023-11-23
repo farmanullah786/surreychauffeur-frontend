@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const AirportTransportSection = () => {
+const PinkBerryAirport = () => {
   return (
     <div
       className="container-fluid no-padding airport-transport transport"
       id="airport-transfer"
     >
       <div className="section-padding"></div>
-      {/* Container */}
       <div className="container text-center">
         <h3>Airport Transport</h3>
         <p>
@@ -38,10 +37,9 @@ const AirportTransportSection = () => {
           Read More
         </Link>
       </div>
-      {/* Container/- */}
       <div className="section-padding"></div>
     </div>
   );
 };
 
-export default AirportTransportSection;
+export default PinkBerryAirport;

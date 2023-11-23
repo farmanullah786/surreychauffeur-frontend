@@ -1,31 +1,15 @@
 import React, { useState } from "react";
 import AppLayout from "../components/applayout/AppLayout";
+import LoadingOverlay from "../components/shared/LoadingOverlay";
+import TransferInquiry from "../components/forms/TransferInquiry";
+import { Link } from "react-router-dom";
 
 const CorporateTransferComponent = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [reconfirmEmail, setReconfirmEmail] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [numberOfPassengers, setNumberOfPassengers] = useState("");
-  const [date, setDate] = useState("");
-  const [specialRequirements, setSpecialRequirements] = useState("");
-
-  const handleSubmit = () => {
-    // Add your form submission logic here
-    // You can access the form data using the state variables (name, email, etc.)
-    console.log("Form submitted:", {
-      name,
-      email,
-      reconfirmEmail,
-      phoneNumber,
-      numberOfPassengers,
-      date,
-      specialRequirements,
-    });
-  };
+  const [loadingOverlay, setLoadingOverlay] = useState(false);
 
   return (
     <AppLayout>
+      {loadingOverlay && <LoadingOverlay />}
       <div className="container-fluid">
         <div className="space"></div>
         <div className="col-md-12">
@@ -46,189 +30,10 @@ const CorporateTransferComponent = () => {
               <div className="stm_rent_car_form">
                 <div name="book-taxi" className="book-taxi-form">
                   <h3>Corporate Transfer Inquiry</h3>
-                  <a href="faq.html" className="faq-btn">
+                  <Link to="/faq" className="faq-btn">
                     FAQ
-                  </a>
-                  <div className="row">
-                    <div className="form-group col-md-12 col-sm-12">
-                      <div className="col-md-4">
-                        <label htmlFor="name">
-                          Name<span className="requ">*</span> :
-                        </label>
-                      </div>
-                      <div className="col-md-8">
-                        <input
-                          name="ctl00$ContentPlaceHolder1$txtName"
-                          type="text"
-                          id="ctl00_ContentPlaceHolder1_txtName"
-                          value={name}
-                          onChange={(e) => setName(e.target.value)}
-                        />
-                        <span
-                          id="ctl00_ContentPlaceHolder1_RequiredFieldValidator7"
-                          style={{ color: "Red", display: "none" }}
-                        >
-                          *
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="form-group col-md-12 col-sm-12">
-                      <div className="col-md-4">
-                        <label htmlFor="email">
-                          Email<span className="requ">*</span> :
-                        </label>
-                      </div>
-                      <div className="col-md-8">
-                        <input
-                          name="ctl00$ContentPlaceHolder1$txtEmail"
-                          type="text"
-                          id="ctl00_ContentPlaceHolder1_txtEmail"
-                          value={email}
-                          onChange={(e) => setEmail(e.target.value)}
-                        />
-                        <span
-                          id="ctl00_ContentPlaceHolder1_RequiredFieldValidator6"
-                          style={{ color: "Red", display: "none" }}
-                        >
-                          *
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="form-group col-md-12 col-sm-12">
-                      <div className="col-md-4">
-                        <label htmlFor="reconfirmEmail">
-                          Reconfirm Email<span className="requ">*</span> :
-                        </label>
-                      </div>
-                      <div className="col-md-8">
-                        <input
-                          name="ctl00$ContentPlaceHolder1$txtReConfirmEmail"
-                          type="text"
-                          id="ctl00_ContentPlaceHolder1_txtReConfirmEmail"
-                          value={reconfirmEmail}
-                          onChange={(e) => setReconfirmEmail(e.target.value)}
-                        />
-                        <span
-                          id="ctl00_ContentPlaceHolder1_RequiredFieldValidator5"
-                          style={{ color: "Red", display: "none" }}
-                        >
-                          *
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="form-group col-md-12 col-sm-12">
-                      <div className="col-md-4">
-                        <label htmlFor="phoneNumber">
-                          Phone Number<span className="requ">*</span> :
-                        </label>
-                      </div>
-                      <div className="col-md-8">
-                        <input
-                          name="ctl00$ContentPlaceHolder1$txtPhoneNumber"
-                          type="text"
-                          id="ctl00_ContentPlaceHolder1_txtPhoneNumber"
-                          value={phoneNumber}
-                          onChange={(e) => setPhoneNumber(e.target.value)}
-                        />
-                        <span
-                          id="ctl00_ContentPlaceHolder1_RequiredFieldValidator4"
-                          style={{ color: "Red", display: "none" }}
-                        >
-                          *
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="form-group col-md-12 col-sm-12">
-                      <div className="col-md-4">
-                        <span style={{ color: "white" }}>
-                          Number of Passengers:
-                        </span>
-                      </div>
-                      <div className="col-md-8">
-                        <input
-                          name="ctl00$ContentPlaceHolder1$txtNumberofPassengers"
-                          type="text"
-                          id="ctl00_ContentPlaceHolder1_txtNumberofPassengers"
-                          value={numberOfPassengers}
-                          onChange={(e) =>
-                            setNumberOfPassengers(e.target.value)
-                          }
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="form-group col-md-12 col-sm-12">
-                      <div className="col-md-4">
-                        <label htmlFor="date">Date :</label>
-                      </div>
-                      <div className="col-md-8">
-                        {/* Date Picker - Replace this with your preferred date picker component */}
-                        <input
-                          name="ctl00$ContentPlaceHolder1$txtDate"
-                          type="text"
-                          id="ctl00_ContentPlaceHolder1_txtDate"
-                          value={date}
-                          onChange={(e) => setDate(e.target.value)}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="form-group col-md-12 col-sm-12">
-                      <div className="col-md-4">
-                        <label htmlFor="specialRequirements">
-                          Tell Us About Your Requirement
-                          <span className="requ">*</span>{" "}
-                        </label>
-                        <p>Pick up dates, from where to where and etc...</p>
-                      </div>
-                      <div className="col-md-8">
-                        <textarea
-                          name="ctl00$ContentPlaceHolder1$txtSpecial"
-                          rows="2"
-                          cols="20"
-                          id="ctl00_ContentPlaceHolder1_txtSpecial"
-                          value={specialRequirements}
-                          onChange={(e) =>
-                            setSpecialRequirements(e.target.value)
-                          }
-                        ></textarea>
-                        <span
-                          id="ctl00_ContentPlaceHolder1_RequiredFieldValidator3"
-                          style={{ color: "Red", display: "none" }}
-                        >
-                          *
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-12 btndiv">
-                      <a
-                        id="ctl00_ContentPlaceHolder1_btnSubmit"
-                        className="btn"
-                        href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$ContentPlaceHolder1$btnSubmit", "", true, "submit", "", false, true))'
-                        onClick={handleSubmit}
-                      >
-                        SUBMIT
-                      </a>
-                      <br />
-                      <br />
-                      <span
-                        id="ctl00_ContentPlaceHolder1_lblError"
-                        style={{ color: "Red" }}
-                      ></span>
-                    </div>
-                  </div>
+                  </Link>
+                  <TransferInquiry setLoadingOverlay={setLoadingOverlay} transfer_type="corporate"/>
                 </div>
               </div>
             </div>

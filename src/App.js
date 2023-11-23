@@ -12,7 +12,6 @@ import SiteMap from "./screens/SiteMap";
 import FAQ from "./screens/FAQ";
 import Feedback from "./screens/Feedback";
 import AddFeedback from "./screens/AddFeedback";
-import GroupTransferForm from "./screens/GroupTransferForm";
 import CorporateTransfer from "./screens/CorporateTransfer";
 import SightSeeingTour from "./screens/SightSeeingTour";
 import Vehicles from "./screens/Vehicles";
@@ -27,10 +26,12 @@ import StationTransportInformation from "./screens/StationTransportInformation";
 import ForgottenPassword from "./screens/ForgottenPassword";
 import ChangePassword from "./screens/ChangePassword";
 import ResetPassword from "./screens/ResetPassword";
+import Profile from './components/userProfile/Profile'
+import GroupTransfer from './screens/GroupTransfer'
+import TransferSuccessMessage from './screens/TransferSuccessMessage'
 
 import "animate.css";
-import PersonalDetailsForm from "./components/PersonalDetailsForm";
-import BillingForm from "./components/BillingForm";
+import BillingForm from "./components/sections/BillingForm";
 
 function App() {
   const isLogged = localStorage.getItem("authToken") ?? null;
@@ -55,7 +56,7 @@ function App() {
     },
     {
       path: "/user-profile",
-      element: isLogged ? <PersonalDetailsForm />: <Navigate to="/login-form"/>,
+      element: isLogged ? <Profile/>: <Navigate to="/login-form"/>,
     },
     {
       path: "/billing-form",
@@ -104,7 +105,11 @@ function App() {
     },
     {
       path: "/group-transfer",
-      element: <GroupTransferForm />,
+      element: <GroupTransfer />,
+    },
+    {
+      path: "/transfer-inquiry",
+      element: <TransferSuccessMessage />,
     },
     {
       path: "/airport-transfer",

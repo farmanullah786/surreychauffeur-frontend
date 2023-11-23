@@ -1,11 +1,11 @@
 import React from 'react'
 import AppLayout from '../components/applayout/AppLayout'
-import AirportTransportSection from '../components/AirportTransportSection'
+import PinkBerryAirport from '../components/sections/PinkBerryAirport'
 
 const AirportTransfer = () => {
   return (
     <AppLayout>
-        <AirportTransportSection/>
+      <PinkBerryAirport/>
     </AppLayout>
   )
 }

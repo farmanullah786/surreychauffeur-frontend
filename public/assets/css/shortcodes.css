@@ -606,14 +606,14 @@ p.highlight {
 .online-booking-form .input-group select,
 .online-booking-form select,
 .online-booking-form textarea {
-  height: auto;
-  padding: 12px 12px;
-  line-height: 18px;
-  color: #d1d1d1;
-  box-shadow: none;
-  border-radius: 3px;
-  outline: 0;
-  border: 1px solid #d1d1d1;
+  height: auto!important;
+  padding: 12px 12px!important;
+  line-height: 18px!important;
+  color: #d1d1d1!important;
+  box-shadow: none!important;
+  border-radius: 3px!important;
+  outline: 0!important;
+  border: 1px solid #d1d1d1!important;
 }
 
 .online-booking-form .form-control {
@@ -624,8 +624,8 @@ p.highlight {
 
 .online-booking-form select,
 .online-booking-form .input-group select {
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 11px!important;
+  padding-bottom: 11px!important;
 }
 
 .online-booking-form textarea {
@@ -890,16 +890,16 @@ input[type="radio"] {
 }
 
 .book-taxi-form h3 {
-  margin: 0 10px 14px 0px;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 18px;
-  letter-spacing: 1px;
-  color: #fff;
-  text-align: left;
-  background-color: #14b511;
-  border: 0;
-  display: inline-block;
+  margin: 0 10px 14px 0px!important;
+  padding: 10px!important;
+  border-radius: 5px!important;
+  font-size: 18px!important;
+  letter-spacing: 1px!important;
+  color: #fff!important;
+  text-align: left!important;
+  background-color: #14b511!important;
+  border: 0!important;
+  display: inline-block!important;
 }
 
 .book-taxi-form .btn {
@@ -1484,7 +1484,7 @@ li.social-ico {
   }
 
   .book-taxi-form h3 {
-    margin-bottom: 15px;
+    margin-bottom: 15px!important;
   }
 
   .book-taxi-form .form-group {
@@ -1517,7 +1517,7 @@ li.social-ico {
   }
 
   .book-taxi-form h3 {
-    margin-bottom: 15px;
+    margin-bottom: 15px!important;
   }
 
   .book-taxi-form .form-group {

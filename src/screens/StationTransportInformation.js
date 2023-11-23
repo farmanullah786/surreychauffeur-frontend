@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AppLayout from "../components/applayout/AppLayout";
 import BookingForm from "../components/BookingForm";
-import BannerComponent from "../components/BannerComponent";
+import DiscountBanner from "../components/shared/DiscountBanner";
 
 const StationTransportInformation = () => {
   useEffect(() => {
@@ -49,7 +49,7 @@ const StationTransportInformation = () => {
           <BookingForm />
         </div>
       </div>
-      <BannerComponent image="assets/images/banner-img4.jpg" />
+      <DiscountBanner image="assets/images/banner-img4.jpg" />
     </AppLayout>
   );
 };
