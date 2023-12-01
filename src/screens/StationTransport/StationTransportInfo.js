@@ -1,14 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AppLayout from "../../components/applayout/AppLayout";
-import BookingForm from "../../components/BookingForm";
 import DiscountBanner from "../../components/shared/DiscountBanner";
+import LocationDetails from "../../components/forms/LocationDetails";
+import LoadingOverlay from "../../components/shared/LoadingOverlay";
 
 const StationTransportInfo = () => {
+  const [loadingOverlay, setLoadingOverlay] = useState(false);
+
   useEffect(() => {
     document.querySelector("#ctl00_dvMainContainer")?.classList.add("arp");
   }, []);
   return (
     <AppLayout>
+      {loadingOverlay && <LoadingOverlay />}
       <div className="container-fluid">
         <div className="space"></div>
         <div className="col-md-12 arp-t">
@@ -46,7 +50,13 @@ const StationTransportInfo = () => {
               0203 327 6606 or 44 203 327 6606.
             </p>
           </div>
-          <BookingForm />
+          <div class="col-md-6 col-sm-12 col-xs-12 left-side">
+            <div class="booking-form-inner">
+              <div class="stm_rent_car_form">
+                <LocationDetails setLoadingOverlay={setLoadingOverlay} />{" "}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <DiscountBanner image="assets/images/banner-img4.jpg" />

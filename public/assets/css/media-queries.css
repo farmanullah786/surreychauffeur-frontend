@@ -1,0 +1,1184 @@
+/************************************************************************************
+smaller than 991
+*************************************************************************************/
+@media screen and (max-width: 991px) {
+  #header {
+    float: left;
+    width: 100%;
+    height: inherit;
+    background: #fff;
+    -moz-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px #888 solid;
+  }
+  #header #logo {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  #contentRows li:nth-child(1) {
+    width: 100%;
+    padding: 0 10px;
+    border-right: none;
+  }
+  #contentRows li:nth-child(2) {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    border-right: none;
+    border-top: 1px solid #e2017b;
+  }
+  #bottomCate {
+    list-style: none;
+    margin: 20px 25px 0 25px;
+    padding: 0;
+  }
+  #bottomCate li {
+    float: left;
+    width: 100%;
+    padding: 15px 13px;
+  }
+  #bottomCate li:nth-child(2) {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+  }
+  #sectionsCat li {
+    float: left;
+    margin: 0 0;
+  }
+  .sectionsCatset {
+    float: left !important;
+    width: 220px !important;
+    margin: 0 0;
+  }
+  #welcomeArea li:nth-child(2) {
+    width: 98%;
+    padding: 10px 22px 0 !important;
+  }
+  #contentRows li:nth-child(1) label,
+  #contentRows li:nth-child(2) label {
+    font-size: 12px;
+    color: #323232;
+    display: block;
+    float: left;
+    width: 100% !important;
+    line-height: 26px;
+  }
+  .fieldmax4 {
+    width: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+  .fieldmax5 {
+    width: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+  #contentRows li:nth-child(1) p {
+    font-size: 11px;
+    color: #8c5e98;
+    float: left;
+    width: 100%;
+  }
+  #welcomeArea li {
+    width: 98% !important;
+  }
+  #upperContact {
+    float: right;
+    margin-top: 0px !important;
+  }
+  #upperContact p {
+    font-size: 12px;
+    color: #db006c;
+    background: url(../img/img.png) -1000px -258px;
+    line-height: 20px;
+    margin: 5px 0 0;
+    padding: 0 0 0 70px;
+    text-align: right;
+  }
+  .sectioncvr {
+    width: 80%;
+    float: right;
+  }
+  .skypecvr {
+    float: left;
+    margin-top: -63px;
+    margin-left: 70px;
+  }
+  .main_Wrapper-inner {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding: 20px;
+  }
+  .tripDetails ul li {
+    width: 100%;
+    background-color: #eee;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .tdVals {
+    float: left;
+    width: 70%;
+    text-align: left;
+  }
+}
+/************************************************************************************
+    smaller than 768
+    *************************************************************************************/
+@media screen and (max-width: 768px) {
+  #header {
+    float: left;
+    width: 100%;
+    height: inherit;
+    background: #fff;
+    -moz-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px #888 solid;
+  }
+  #header #logo {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+  }
+  #contentRows li:nth-child(1) {
+    width: 100%;
+    padding: 0 10px;
+    border-right: none;
+  }
+  #contentRows li:nth-child(2) {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    border-right: none;
+    border-top: 1px solid #e2017b;
+  }
+  #bottomCate {
+    list-style: none;
+    margin: 20px 25px 0 25px;
+    padding: 0;
+  }
+  #bottomCate li {
+    float: left;
+    width: 100%;
+    padding: 15px 13px;
+  }
+  #bottomCate li:nth-child(2) {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+  }
+  #sectionsCat li {
+    float: left;
+    margin: 0 0;
+  }
+  .sectionsCatset {
+    float: left !important;
+    width: 200px !important;
+    margin: 0 0;
+  }
+  #upperContact {
+    float: right;
+    margin-top: 0px !important;
+  }
+  #upperContact p {
+    font-size: 12px;
+    color: #db006c;
+    background: url(../img/img.png) -1000px -258px;
+    line-height: 20px;
+    margin: 5px 0 0;
+    padding: 0 0 0 70px;
+    text-align: right;
+  }
+  .sectioncvr {
+    width: 100%;
+    float: right;
+  }
+  .skypecvr {
+    float: left;
+    margin-top: -60px;
+    margin-left: 20px;
+  }
+}
+/************************************************************************************
+    smaller than 568
+    *************************************************************************************/
+@media screen and (max-width: 568px) {
+  #header {
+    float: left;
+    width: 100%;
+    height: inherit;
+    background: #fff;
+    -moz-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px #888 solid;
+  }
+  #header #logo {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+  }
+  #contentRows li:nth-child(1) {
+    width: 100%;
+    padding: 0 10px;
+    border-right: none;
+  }
+  #contentRows li:nth-child(2) {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    border-right: none;
+    border-top: 1px solid #e2017b;
+  }
+  #bottomCate {
+    list-style: none;
+    margin: 20px 25px 0 25px;
+    padding: 0;
+  }
+  #bottomCate li {
+    float: left;
+    width: 100%;
+    padding: 15px 13px;
+  }
+  #bottomCate li:nth-child(2) {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+  }
+  #sectionsCat li {
+    float: left;
+    margin: 0 0;
+  }
+  .sectionsCatset {
+    float: left !important;
+    width: 100% !important;
+    margin: 0 0;
+  }
+  .pubOffice {
+    width: 100%;
+    float: right;
+    margin-top: 20px !important;
+  }
+  .paymentMethods {
+    width: 100%;
+    float: left;
+  }
+  #bottomCate li:nth-child(3) input[type="password"],
+  #bottomCate li:nth-child(3) input[type="text"] {
+    font-size: 12px;
+    padding: 4px;
+    width: 100%;
+    float: left;
+    margin: 0 0 0;
+  }
+  #bottomCate li:nth-child(3) label {
+    font-size: 12px;
+    width: 100%;
+    float: left;
+    color: #2e2e2e;
+    margin: 8px 0 3px 0 !important;
+  }
+  #bottomCate li:nth-child(3) input[type="submit"] {
+    width: 100%;
+    float: right;
+    background: #e44082;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #f09;
+    margin-top: 15px;
+    margin-right: 0;
+    padding: 8px 0;
+  }
+
+  #upperContact {
+    float: right;
+    margin-top: 0px !important;
+  }
+  #upperContact p {
+    font-size: 12px;
+    color: #db006c;
+    background: url(../img/img.png) -1000px -258px;
+    line-height: 20px;
+    margin: 5px 0 0;
+    padding: 0 0 0 80px;
+    text-align: right;
+  }
+  .sectioncvr {
+    width: 100%;
+    float: right;
+    margin-bottom: 5px;
+  }
+  .skypecvr {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0px;
+    text-align: right;
+  }
+  .skypecvr dl,
+  h3,
+  menu,
+  ol,
+  p,
+  pre,
+  ul {
+    margin: 10px 0 0px 0;
+  }
+}
+/************************************************************************************
+    smaller than 480
+    *************************************************************************************/
+@media screen and (max-width: 480px) {
+  #header {
+    float: left;
+    width: 100%;
+    height: inherit;
+    background: #fff;
+    -moz-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px #888 solid;
+  }
+  #header #logo {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+  }
+  #contentRows li:nth-child(1) {
+    width: 100%;
+    padding: 0 10px;
+    border-right: none;
+  }
+  #contentRows li:nth-child(2) {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    border-right: none;
+    border-top: 1px solid #e2017b;
+  }
+  #bottomCate {
+    list-style: none;
+    margin: 20px 25px 0 25px;
+    padding: 0;
+  }
+  #bottomCate li {
+    float: left;
+    width: 100%;
+    padding: 15px 13px;
+  }
+  #bottomCate li:nth-child(2) {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+  }
+  #sectionsCat li {
+    float: left;
+    margin: 0 0;
+  }
+  .sectionsCatset {
+    float: left !important;
+    width: 100% !important;
+    margin: 0 0;
+  }
+  .pubOffice {
+    width: 100%;
+    float: right;
+    margin-top: 20px !important;
+  }
+  .paymentMethods {
+    width: 100%;
+    float: left;
+  }
+  #bottomCate li:nth-child(3) input[type="password"],
+  #bottomCate li:nth-child(3) input[type="text"] {
+    font-size: 12px;
+    padding: 4px;
+    width: 100%;
+    float: left;
+    margin: 0 0 0;
+  }
+  #bottomCate li:nth-child(3) label {
+    font-size: 12px;
+    width: 100%;
+    float: left;
+    color: #2e2e2e;
+    margin: 8px 0 3px 0 !important;
+  }
+  #bottomCate li:nth-child(3) input[type="submit"] {
+    width: 100%;
+    float: right;
+    background: #e44082;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #f09;
+    margin-top: 15px;
+    margin-right: 0;
+    padding: 8px 0;
+  }
+
+  #upperContact {
+    float: right;
+    margin-top: 0px !important;
+  }
+  #upperContact p {
+    font-size: 12px;
+    color: #db006c;
+    background: url(../img/img.png) -1000px -258px;
+    line-height: 20px;
+    margin: 5px 0 0;
+    padding: 0 0 0 80px;
+    text-align: right;
+  }
+  .sectioncvr {
+    width: 100%;
+    float: right;
+    margin-bottom: 5px;
+  }
+  .skypecvr {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0px;
+    text-align: right;
+  }
+  .skypecvr dl,
+  h3,
+  menu,
+  ol,
+  p,
+  pre,
+  ul {
+    margin: 10px 0 0px 0;
+  }
+}
+/************************************************************************************
+    smaller than 375
+    *************************************************************************************/
+@media screen and (max-width: 375px) {
+  #header {
+    float: left;
+    width: 100%;
+    height: inherit;
+    background: #fff;
+    -moz-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px #888 solid;
+  }
+  #header #logo {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+  }
+  #contentRows li:nth-child(1) {
+    width: 100%;
+    padding: 0 10px;
+    border-right: none;
+  }
+  #contentRows li:nth-child(2) {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    border-right: none;
+    border-top: 1px solid #e2017b;
+  }
+  #bottomCate {
+    list-style: none;
+    margin: 20px 25px 0 25px;
+    padding: 0;
+  }
+  #bottomCate li {
+    float: left;
+    width: 100%;
+    padding: 15px 13px;
+  }
+  #bottomCate li:nth-child(2) {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+  }
+  #sectionsCat li {
+    float: left;
+    margin: 0 0;
+  }
+  .sectionsCatset {
+    float: left !important;
+    width: 100% !important;
+    margin: 0 0;
+  }
+  .pubOffice {
+    width: 100%;
+    float: right;
+    margin-top: 20px !important;
+  }
+  .paymentMethods {
+    width: 100%;
+    float: left;
+  }
+  #bottomCate li:nth-child(3) input[type="password"],
+  #bottomCate li:nth-child(3) input[type="text"] {
+    font-size: 12px;
+    padding: 4px;
+    width: 100%;
+    float: left;
+    margin: 0 0 0;
+  }
+  #bottomCate li:nth-child(3) label {
+    font-size: 12px;
+    width: 100%;
+    float: left;
+    color: #2e2e2e;
+    margin: 8px 0 3px 0 !important;
+  }
+  #bottomCate li:nth-child(3) input[type="submit"] {
+    width: 100%;
+    float: right;
+    background: #e44082;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #f09;
+    margin-top: 15px;
+    margin-right: 0;
+    padding: 8px 0;
+  }
+
+  #upperContact {
+    float: right;
+    margin-top: 0px !important;
+  }
+  #upperContact p {
+    font-size: 12px;
+    color: #db006c;
+    background: url(../img/img.png) -1000px -258px;
+    line-height: 20px;
+    margin: 5px 0 0;
+    padding: 0 0 0 80px;
+    text-align: right;
+  }
+  .sectioncvr {
+    width: 100%;
+    float: right;
+    margin-bottom: 5px;
+  }
+  .skypecvr {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0px;
+    text-align: right;
+  }
+  .skypecvr dl,
+  h3,
+  menu,
+  ol,
+  p,
+  pre,
+  ul {
+    margin: 10px 0 0px 0;
+  }
+}
+/************************************************************************************
+    smaller than 320
+    *************************************************************************************/
+@media screen and (max-width: 320px) {
+  #header {
+    float: left;
+    width: 100%;
+    height: inherit;
+    background: #fff;
+    -moz-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px #888 solid;
+  }
+  #header #logo {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+  }
+  #contentRows li:nth-child(1) {
+    width: 100%;
+    padding: 0 10px;
+    border-right: none;
+  }
+  #contentRows li:nth-child(2) {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    border-right: none;
+    border-top: 1px solid #e2017b;
+  }
+  #bottomCate {
+    list-style: none;
+    margin: 20px 25px 0 25px;
+    padding: 0;
+  }
+  #bottomCate li {
+    float: left;
+    width: 100%;
+    padding: 15px 13px;
+  }
+  #bottomCate li:nth-child(2) {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+  }
+  #sectionsCat li {
+    float: left;
+    margin: 0 0;
+  }
+  .sectionsCatset {
+    float: left !important;
+    width: 100% !important;
+    margin: 0 0;
+  }
+  .pubOffice {
+    width: 100%;
+    float: right;
+    margin-top: 20px !important;
+  }
+  .paymentMethods {
+    width: 100%;
+    float: left;
+  }
+  #bottomCate li:nth-child(3) input[type="password"],
+  #bottomCate li:nth-child(3) input[type="text"] {
+    font-size: 12px;
+    padding: 4px;
+    width: 100%;
+    float: left;
+    margin: 0 0 0;
+  }
+  #bottomCate li:nth-child(3) label {
+    font-size: 12px;
+    width: 100%;
+    float: left;
+    color: #2e2e2e;
+    margin: 8px 0 3px 0 !important;
+  }
+  #bottomCate li:nth-child(3) input[type="submit"] {
+    width: 100%;
+    float: right;
+    background: #e44082;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #f09;
+    margin-top: 15px;
+    margin-right: 0;
+    padding: 8px 0;
+  }
+
+  #upperContact {
+    float: right;
+    margin-top: 0px !important;
+  }
+  #upperContact p {
+    font-size: 12px;
+    color: #db006c;
+    background: url(../img/img.png) -1000px -258px;
+    line-height: 20px;
+    margin: 5px 0 0;
+    padding: 0 0 0 70px;
+    text-align: right;
+  }
+  .sectioncvr {
+    width: 100%;
+    float: right;
+    margin-bottom: 5px;
+  }
+  .skypecvr {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0px;
+    text-align: right;
+  }
+  .skypecvr dl,
+  h3,
+  menu,
+  ol,
+  p,
+  pre,
+  ul {
+    margin: 10px 0 0px 0;
+  }
+}
+
+.topnav {
+  /* float:left; */
+  width: 100%;
+  /* background: #E2017B; */
+  margin-top: 0;
+  border-top: none;
+  border-left: 0;
+  /* border: 1px solid #888; */
+  border-radius: 0 0 10px 10px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  border-left: 1px solid #fff;
+}
+.bdrnone {
+  border-left: none !important;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+}
+.topnav2 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  border-left: 1px solid #fff;
+}
+.topnav2 a:hover {
+  color: #ccc;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 8px;
+    text-decoration: none;
+    font-size: 13px;
+    border-left: 1px solid #fff;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    padding: 10px 18px;
+    font-size: 20px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    border-left: none;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 767px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.pubOffice {
+  float: right;
+  margin-top: -70px;
+}
+.paymentMethods {
+  width: 100%;
+  float: left;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.pricebox1 {
+  float: left;
+  width: 49%;
+}
+.pricebox2 {
+  float: right;
+  width: 49%;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+@media (min-width: 320px) {
+  .container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width: 991px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+/* Start Media Quaries updated
+    ==================================== */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .book-taxi-form .form-group > label {
+    font-size: 11px;
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .logo img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .emaillatter {
+    width: 100%;
+    float: left;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0 0%;
+  }
+
+  .emailfield {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .login-formcvr2 {
+    width: 70%;
+    margin: 0 auto 15px auto;
+  }
+  .display-full {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100% !important;
+  }
+  .pricebox1 {
+    float: left;
+    width: 100%;
+  }
+  .pricebox2 {
+    float: right;
+    width: 100%;
+  }
+  .timebox-error {
+    width: 100%;
+    float: left;
+    padding: 1% 15px;
+    margin: 0 0 1% 0;
+    border: 1px solid #3da51f;
+    background-color: #ebf9e0;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: 700;
+    color: #41a724;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .vehicles-box2 {
+    width: 100;
+    float: left;
+    margin: 0;
+    -moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -khtml-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #fe4591;
+  }
+
+  .vehicles-img {
+    float: left;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    text-align: center;
+  }
+
+  .vehicles-hd2 {
+    margin: 10px 0 5px 0;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+
+  .passengers-box {
+    float: right;
+    width: 100%;
+    text-align: center;
+    margin: 2% 0 0 0;
+  }
+
+  .passengers-1,
+  .passengers-2,
+  .passengers-3 {
+    margin: 0 0 30px 0;
+    float: initial;
+    width: 20%;
+    padding: 10px;
+    font-family: arial;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    text-align: right;
+    padding: 0px;
+    display: -webkit-inline-box;
+  }
+  .passengers-1 img,
+  .passengers-2 img,
+  .passengers-3 img {
+    width: 40%;
+  }
+
+  .member-price-box {
+    float: right;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2%;
+    text-align: left;
+  }
+
+  .member-price1 {
+    margin: 0;
+    float: left;
+    width: 100%;
+    text-decoration: none;
+    text-align: left;
+  }
+
+  .radio-box {
+    float: left;
+    width: 3%;
+    margin: 5px 8px 0 0;
+  }
+
+  .radio-box2 {
+    float: left;
+    width: 3%;
+    padding-right: 2%;
+  }
+
+  .price-hd {
+    margin: 0;
+    width: 60%;
+    float: left;
+    font-size: 18px;
+    color: #3b0050;
+  }
+
+  .price-hd2 {
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    text-decoration: underline;
+    margin: 0 0 0 30px;
+  }
+
+  .DeleteButton {
+    width: 18px;
+    height: 18px;
+    margin: 1% 0 0;
+    background: url(../images/cross.png) no-repeat;
+    cursor: pointer;
+    border: none;
+  }
+
+  .resultcarimg {
+    padding: 10px;
+    margin: 0 0 0 6%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .login-formcvr2 {
+    width: 100%;
+    margin: 0 auto 15px auto;
+  }
+
+  .price-hd {
+    margin: 10px 0;
+  }
+  .passengers-1,
+  .passengers-2,
+  .passengers-3 {
+    margin: 0 5px 30px 5px;
+    float: initial;
+    width: 20%;
+    padding: 10px;
+    font-family: arial;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    text-align: right;
+    padding: 0px;
+    display: -webkit-inline-box;
+  }
+  .passengers-1 img,
+  .passengers-2 img,
+  .passengers-3 img {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .display-full {
+    float: none !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .pricebox1 {
+    float: left;
+    width: 100%;
+  }
+
+  .pricebox2 {
+    float: right;
+    width: 100%;
+  }
+
+  .car2-details-price {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    background: #b71c68;
+    padding: 10px 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+}
+
+@media (-webkit-max-device-pixel-ratio) {
+}
+@media only screen and (max-width: 375px) {
+  .price-hd {
+    margin: 7px 0 30px 5px;
+    width: 80%;
+    float: left;
+    font-size: 18px;
+    color: #3b0050;
+  }
+}
+/* ========================= XXX ========================= XXX ========================= */
+/* ========================= XXX ========================= XXX ========================= */

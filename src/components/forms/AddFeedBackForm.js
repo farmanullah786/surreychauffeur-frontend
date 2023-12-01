@@ -41,7 +41,7 @@ const AddFeedBackForm = (props) => {
     formData.append("message", message);
 
     props.postRequestToFeedBack(
-      "feedback/",
+      "feedbacks/",
       formData,
       reset,
       props?.setLoadingOverlay

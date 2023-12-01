@@ -28,9 +28,9 @@ const MemberNavbar = () => {
         <div className="collapse navbar-collapse" id="myNavbar">
           <ul className="nav navbar-nav topnav topnav2" id="navigation1">
             <li>
-              <a href="RetailBookingList.aspx" className="bdrnone">
+              <Link to="/booking-list" className="bdrnone">
                 Booking List
-              </a>
+              </Link>
             </li>
             <li>
               <Link
@@ -43,7 +43,7 @@ const MemberNavbar = () => {
             </li>
             <li>
               <Link
-                to="/change-password"
+                to="/reset-password"
                 id="ctl00_changepassword"
                 className="bdrnone"
               >

@@ -1,8 +1,9 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { jwtDecode as jwt_decode } from "jwt-decode";
+import GoogleTranslate from "./GoogleTranslate";
+import NavigationBar from "../components/shared/NavigationBar";
 
-import NavigationBar from '../components/shared/NavigationBar'
 const Header = () => {
   const navigate = useNavigate();
 
@@ -10,6 +11,8 @@ const Header = () => {
   const user = isLogged && jwt_decode(isLogged);
   const logout = () => {
     localStorage.removeItem("authToken");
+    localStorage.removeItem("bookingData");
+    localStorage.removeItem("uuidObject");
     navigate("/");
   };
   return (
@@ -44,6 +47,7 @@ const Header = () => {
                 <li className="language-select">
                   {/* Language selection code */}
                   {/* You can add a separate component for language selection if needed */}
+                  <GoogleTranslate />
                 </li>
                 {isLogged ? (
                   <li>
@@ -148,8 +152,6 @@ const Header = () => {
         {/* Navigation */}
         <NavigationBar />
       </header>
-
-      
     </>
   );
 };

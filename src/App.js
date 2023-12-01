@@ -31,16 +31,31 @@ import StationTransportInfo from "./screens/StationTransport/StationTransportInf
 import TermsAndConditions from "./screens/TermsAndConditions";
 import TransferSuccessMessage from "./screens/TransferSuccessMessage";
 import Vehicles from "./screens/Vehicles";
+import BookingTypeSelection from "./screens/BookingTypeSelection";
+import MapWithCurrentLocation from "./screens/MapWithCurrentLocation";
 
 import "animate.css";
+import Result from "./screens/Result";
+import Booking from "./screens/Booking";
+import BookingList from "./screens/BookingList";
+import BookingDetail from "./screens/BookingDetail";
+import BookingConfirmation from "./screens/BookingConfirmation";
+import BookingSuccessMessage from "./screens/BookingSuccessMessage";
 
 function App() {
   const isLogged = localStorage.getItem("authToken") ?? null;
   const user = isLogged && jwt_decode(isLogged);
+  // const bookingData = localStorage.removeItem("bookingData")
+  //   ? localStorage.removeItem("bookingData")
+  //   : null;
   let routes = useRoutes([
     {
       path: "/",
       element: <HomePage />,
+    },
+    {
+      path: "/google",
+      element: <MapWithCurrentLocation />,
     },
     {
       path: "/about-pink-berry",
@@ -57,6 +72,30 @@ function App() {
     {
       path: "/billing-form",
       element: isLogged ? <Billing /> : <Navigate to="/login-form" />,
+    },
+    {
+      path: "/booking-type-selection",
+      element: <BookingTypeSelection />,
+    },
+    {
+      path: "/booking-form",
+      element: <Booking />,
+    },
+    {
+      path: "/booking-list",
+      element: isLogged ? <BookingList /> : <Navigate to="/login-form" />,
+    },
+    {
+      path: "/booking-detail",
+      element: isLogged ? <BookingDetail /> : <Navigate to="/login-form" />,
+    },
+    {
+      path: "/booking-confirmation",
+      element: <BookingConfirmation />,
+    },
+    {
+      path: "/booking-success-message",
+      element: <BookingSuccessMessage />,
     },
     {
       path: "/contact-us",
@@ -119,6 +158,10 @@ function App() {
       element: <PasswordResetComplete />,
     },
     {
+      path: "/result",
+      element: <Result />,
+    },
+    {
       path: "/site-map",
       element: <SiteMap />,
     },
@@ -150,7 +193,6 @@ function App() {
       path: "/user-profile",
       element: isLogged ? <Profile /> : <Navigate to="/login-form" />,
     },
-    
   ]);
 
   if (routes == null) {

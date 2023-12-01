@@ -13,6 +13,10 @@ const Login = () => {
   const [wrongEmailOrPassword, setWrongEmailOrPassword] = useState(false);
   const [loadingOverlay, setLoadingOverlay] = useState(false);
 
+  const queryString = window.location.search;
+  const params = new URLSearchParams(queryString);
+  const uuid = params.get("uuid") ?? null;
+
   const postRequestToLoginForm = async ({ email, password }) => {
     if (!email && !password) {
       return;
@@ -29,8 +33,13 @@ const Login = () => {
         setTimeout(() => {
           localStorage.setItem("authToken", response?.data?.access_token);
           setLoadingOverlay(false);
-          navigate("/");
+
           reset();
+          if (uuid) {
+            navigate(`/booking-form?uuid=${uuid}`);
+          } else {
+            navigate("/");
+          }
         }, 1000);
       }
     } catch (error) {

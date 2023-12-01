@@ -29,7 +29,7 @@ const Footer = () => {
               <li><Link to="/privacy-policy"><i className="fa fa-caret-right" aria-hidden="true"></i>Privacy Policy</Link></li>
               <li><Link to="/site-map"><i className="fa fa-caret-right" aria-hidden="true"></i>Site Map</Link></li>
               <li><Link to="/faq"><i className="fa fa-caret-right" aria-hidden="true"></i>FAQ</Link></li>
-              <li><Link to="/feedback"><i className="fa fa-caret-right" aria-hidden="true"></i>Feedback</Link></li>
+              <li><Link to="/feedbacks"><i className="fa fa-caret-right" aria-hidden="true"></i>Feedback</Link></li>
             </ul>
           </div>
         </div>

@@ -25,14 +25,14 @@ const NavigationBar = () => {
             <span className="icon-bar"></span>
           </button>
           <div className="navbar-brand logo-block">
-            <a href="index.html">
+            <Link to="/">
               <img
                 src={
                   process.env.PUBLIC_URL + "assets/images/pinkberry-logo.jpg"
                 }
                 alt="Logo"
               />
-            </a>
+            </Link>
           </div>
         </div>
         <div id="navbar" className="navbar-collapse collapse">
@@ -50,7 +50,7 @@ const NavigationBar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/cruis-port-transfort">
+              <Link to="/cruise-port-transfort">
                 Cruise Port Transfers<span className="nav-sep">|</span>
               </Link>
             </li>

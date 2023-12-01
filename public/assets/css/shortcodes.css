@@ -847,9 +847,9 @@ p.highlight {
 }
 
 .adviafld {
-  float: left;
+  float: left!important;
   width: 90% !important;
-  margin: 2px 0;
+  margin: 2px 0!important;
 }
 
 .book-taxi-form .form-group {

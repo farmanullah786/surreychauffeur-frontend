@@ -13,6 +13,10 @@ const SignUp = () => {
   const [isSubmittedSuccessfully, setIsSubmittedSuccessfully] = useState(false);
   const [loadingOverlay, setLoadingOverlay] = useState(false);
 
+  const queryString = window.location.search;
+  const params = new URLSearchParams(queryString);
+  const uuid = params.get("uuid") ?? null;
+
   const [text, setText] = useState(null);
   const {
     register,
@@ -43,8 +47,8 @@ const SignUp = () => {
       setWrongEmailOrPassword(true);
       return;
     }
-    if (password.length<8 && password2.length<8) {
-      setText("Password length should be 8 or greater than 8 character");
+    if (password.length < 8 && password2.length < 8) {
+      setText("This password is too short. It must contain at least 8 characters.");
       setWrongEmailOrPassword(true);
       return;
     }
@@ -65,6 +69,11 @@ const SignUp = () => {
           reset();
           setIsSubmittedSuccessfully(true);
           setLoadingOverlay(false);
+          if (uuid) {
+            navigate(`/booking-form?uuid=${uuid}`);
+          } else {
+            navigate("/");
+          }
         }, 2000);
       }
     } catch (error) {

@@ -1,15 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AppLayout from "../../components/applayout/AppLayout";
 import { Link } from "react-router-dom";
-import BookingForm from "../../components/BookingForm";
 import PickupLocationsTable from "../../components/sections/PickupLocationsTable";
 import DiscountBanner from "../../components/shared/DiscountBanner";
+import LocationDetails from "../../components/forms/LocationDetails";
+import LoadingOverlay from "../../components/shared/LoadingOverlay";
 const AirportTransportInfo = () => {
+  const [loadingOverlay, setLoadingOverlay] = useState(false);
+
   useEffect(() => {
     document.querySelector("#ctl00_dvMainContainer")?.classList.add("arp");
   }, []);
   return (
     <AppLayout>
+      {loadingOverlay && <LoadingOverlay />}
+
       <div class="container-fluid">
         <div class="space"></div>
         <div class="col-md-12 arp-t">
@@ -54,15 +59,21 @@ const AirportTransportInfo = () => {
                 <h4 style={{ textAlign: "left" }}>
                   Our meet points at the airport
                 </h4>
-               <PickupLocationsTable/>
+                <PickupLocationsTable />
               </div>
             </div>
           </div>
-          <BookingForm />
+          <div class="col-md-6 col-sm-12 col-xs-12 left-side">
+            <div class="booking-form-inner">
+              <div class="stm_rent_car_form">
+                <LocationDetails setLoadingOverlay={setLoadingOverlay} />{" "}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <DiscountBanner image="assets/images/banner-img5.jpg"/>
-          </AppLayout>
+      <DiscountBanner image="assets/images/banner-img5.jpg" />
+    </AppLayout>
   );
 };
 

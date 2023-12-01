@@ -1,14 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AppLayout from "../../components/applayout/AppLayout";
-import BookingForm from "../../components/BookingForm";
 import DiscountBanner from "../../components/shared/DiscountBanner";
+import LocationDetails from "../../components/forms/LocationDetails";
+import LoadingOverlay from "../../components/shared/LoadingOverlay";
 
 const CruisePortTransportInfo = () => {
+  const [loadingOverlay, setLoadingOverlay] = useState(false);
   useEffect(() => {
     document.querySelector("#ctl00_dvMainContainer")?.classList.add("arp");
   }, []);
   return (
     <AppLayout>
+      {loadingOverlay && <LoadingOverlay />}
       <div class="container-fluid">
         <div class="space"></div>
         <div class="col-md-12 arp-t">
@@ -51,10 +54,16 @@ const CruisePortTransportInfo = () => {
           </div>
 
           {/* add */}
-          <BookingForm />
+          <div class="col-md-6 col-sm-12 col-xs-12 left-side">
+            <div class="booking-form-inner">
+              <div class="stm_rent_car_form">
+              <LocationDetails setLoadingOverlay={setLoadingOverlay}/>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <DiscountBanner image="assets/images/banner-img3.jpg"/>
+      <DiscountBanner image="assets/images/banner-img3.jpg" />
     </AppLayout>
   );
 };

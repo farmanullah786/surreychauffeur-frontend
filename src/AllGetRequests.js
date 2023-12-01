@@ -9,6 +9,7 @@ const AllGetRequest = (props) => {
   const authToken = localStorage.getItem("authToken") || null;
   const user = authToken && jwtDecode(authToken);
 
+
   const tokenExpirationTime = user?.exp * 1000;
   const currentTime = new Date().getTime();
 
@@ -20,15 +21,17 @@ const AllGetRequest = (props) => {
 
   const logout = () => {
     localStorage.removeItem("authToken");
+    localStorage.removeItem("bookingData");
+    localStorage.removeItem("uuidObject");
     navigate("/");
   };
 
   useEffect(() => {
-    if (authToken) {
-      props.getRequestToFeedback(`feedback/`);
-    }
+    props.getRequestToFeedback(`feedbacks/`);
+    props.getRequestToVehicles(`vehicles/`);
     if (user?.user_id) {
       props.getRequestToUserProfile(`update-profile/${user?.user_id}`);
+      props.getRequestToBookingList(`booking/${user?.user_id}`);
     }
   }, [authToken, user?.user_id]);
 
@@ -41,6 +44,10 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(actionCreators.getRequestToFeedbackDispatch(url)),
     getRequestToUserProfile: (url) =>
       dispatch(actionCreators.getRequestToUserProfileDispatch(url)),
+    getRequestToVehicles: (url) =>
+      dispatch(actionCreators.getRequestToVechiclesDispatch(url)),
+    getRequestToBookingList: (url) =>
+      dispatch(actionCreators.getRequestToBookingListDispatch(url)),
   };
 };
 

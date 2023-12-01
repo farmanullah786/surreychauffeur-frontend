@@ -21,23 +21,25 @@ const HomePage = () => {
   }, []);
   return (
     <>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          <InfoBar />
-          <AppLayout>
-            <LandingPage />
-            <DiscountBannerSection />
-            <PinkBerryAbout />
-            <PinkBerryAirport />
-            <CruisePortTransport />
-            <StationTransport/>
-            <Testimonials />
-          </AppLayout>
-        </>
-      )}
-    </>
+    {isLoading ? (
+      <>
+      <Loader />
+      </>
+    ) : (
+      <>
+        <InfoBar />
+        <AppLayout>
+          <LandingPage />
+          <DiscountBannerSection />
+          <PinkBerryAbout />
+          <PinkBerryAirport />
+          <CruisePortTransport />
+          <StationTransport/>
+          <Testimonials />
+        </AppLayout>
+      </>
+    )}
+  </>
   );
 };
 

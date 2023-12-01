@@ -11,9 +11,20 @@ import reportWebVitals from "./reportWebVitals";
 // Reducers
 import feedback from "./store/reducers/feedback";
 import user from "./store/reducers/user";
+import vehicles from "./store/reducers/vehicles";
+import locationDetailsVehicles from "./store/reducers/locationDetailsVehicles";
+import booking from "./store/reducers/booking";
+import bookingList from "./store/reducers/bookingList";
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const rootReducers = combineReducers({ feedback,user });
+const rootReducers = combineReducers({
+  feedback,
+  user,
+  vehicles,
+  locationDetailsVehicles,
+  booking,
+  bookingList,
+});
 const store = createStore(
   rootReducers,
   // applyMiddleware(thunk),

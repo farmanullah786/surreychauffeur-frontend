@@ -1,39 +1,94 @@
 import React from "react";
 
-const airportOptions = [
-  { value: "0", label: "<--SELECT-->" },
-  { value: "6107", label: "Heathrow Airport TW6 1JS" },
-  { value: "4127", label: "Heathrow Terminal 1 TW6 1JS" },
-  { value: "4126", label: "Heathrow Terminal 2 TW6 1JS" },
-  { value: "4125", label: "Heathrow Terminal 3 TW6 1JS" },
-  { value: "4124", label: "Heathrow Terminal 4 TW6 3AA" },
-  { value: "4123", label: "Heathrow Terminal 5 TW6 2GA" },
-  { value: "6108", label: "Gatwick Airport RH6 0PJ" },
-  { value: "4129", label: "Gatwick Airport North RH6 0PJ" },
-  { value: "4128", label: "Gatwick Airport South RH6 0PJ" },
-  { value: "4121", label: "Stansted Airport CM24 1QW" },
-  { value: "4122", label: "Luton Airport LU2 9LY" },
-  { value: "4120", label: "London City Airport E16 2PB" },
-  { value: "4119", label: "Biggin Hill Airport TN16 3BN" },
-  { value: "4118", label: "Birmingham Airport B26 3QJ" },
-  { value: "4117", label: "Bristol Airport BS48 3DY" },
-  { value: "4116", label: "Cardiff Airport CF62 3BD" },
-  { value: "4115", label: "Liverpool Airport L24 1YD" },
-  { value: "4130", label: "Southend Airport SS2 6YF" },
-  { value: "4114", label: "Manchester Airport M90 1QX" },
-  { value: "6182", label: "Southampton Airport SO18 2NL" },
-  { value: "6185", label: "Exeter Airport EX5 2BD" },
-  { value: "6190", label: "Doncaster Airport DN9 3RH" },
+export const airportOptions = [
+  {
+    value: "7100",
+    label: "Islamabad International Airport ISB",
+    identifier: "islamabad",
+  },
+  {
+    value: "7101",
+    label: "Benazir Bhutto International Airport ISB",
+    identifier: "islamabad",
+  },
+  {
+    value: "7102",
+    label: "Allama Iqbal International Airport LHE",
+    identifier: "lahore",
+  },
+  {
+    value: "7103",
+    label: "Jinnah International Airport KHI",
+    identifier: "karachi",
+  },
+  {
+    value: "7104",
+    label: "Quaid-e-Azam International Airport KHI",
+    identifier: "karachi",
+  },
+  {
+    value: "7105",
+    label: "Multan International Airport MUX",
+    identifier: "multan",
+  },
+  {
+    value: "7106",
+    label: "Lahore International Airport LHE",
+    identifier: "lahore",
+  },
+  {
+    value: "7107",
+    label: "Faisalabad International Airport LYP",
+    identifier: "faisalabad",
+  },
+  {
+    value: "7108",
+    label: "Sialkot International Airport SKT",
+    identifier: "sialkot",
+  },
+  {
+    value: "7109",
+    label: "Peshawar International Airport PEW",
+    identifier: "peshawar",
+  },
+  {
+    value: "7110",
+    label: "Bacha Khan International Airport PEW",
+    identifier: "peshawar",
+  },
+  {
+    value: "7111",
+    label: "Gwadar International Airport GWD",
+    identifier: "gwadar",
+  },
+  {
+    value: "7112",
+    label: "Skardu International Airport KDU",
+    identifier: "skardu",
+  },
+  { value: "7113", label: "Gilgit Airport GIL", identifier: "gilgit" },
+  { value: "7114", label: "Chitral Airport CJL", identifier: "chitral" },
+  { value: "7115", label: "Bahawalpur Airport BHV", identifier: "bahawalpur" },
+  {
+    value: "7116",
+    label: "Dera Ghazi Khan Airport DEA",
+    identifier: "dera_ghazi_khan",
+  },
+  { value: "7117", label: "Sukkur Airport SKZ", identifier: "sukkur" },
+  { value: "7118", label: "Larkana Airport LRG", identifier: "larkana" },
+  { value: "7119", label: "Panjgur Airport PJG", identifier: "panjgur" },
+  { value: "7120", label: "Pasni Airport PSI", identifier: "pasni" },
+  { value: "7121", label: "Ormara Airport ORW", identifier: "ormara" },
 ];
 
 const AirportSelect = () => (
-    <>
-    {airportOptions.map((option) => (
-      <option key={option.value} value={option.value}>
+  <>
+    {airportOptions.map((option,index) => (
+      <option key={index} value={option.value}>
         {option.label}
       </option>
     ))}
-    </>
+  </>
 );
 
 export default AirportSelect;

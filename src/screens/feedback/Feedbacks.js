@@ -44,7 +44,7 @@ const Feedback = (props) => {
           <br />
         </div>
         <div className="review2-box">
-          {props?.feedback?.feedback_list?.map((review, index) => (
+          {props?.feedbacks?.map((review, index) => (
             <div className="review2-text" key={index}>
               <div className="review2-text2">
                 <div
@@ -74,7 +74,7 @@ const Feedback = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    feedback: state.feedback.feedbacks,
+    feedbacks: state.feedback.feedbacks?.feedback_list,
   };
 };
 
