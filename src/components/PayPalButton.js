@@ -63,7 +63,6 @@ const PayPalButton = (props) => {
           createOrder={createOrder}
           onApprove={onApprove}
           onCancel={onCancel}
-          className="custom-paypay-button"
           id="paypal-buttons"
           style={{ display: "none" }}
         />
