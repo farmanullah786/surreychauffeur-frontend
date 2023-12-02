@@ -4,6 +4,7 @@ import CarDetails from "../components/shared/CarDetail";
 import * as actionCreators from "../store/actions/index";
 import { connect } from "react-redux";
 import LoadingOverlay from "../components/shared/LoadingOverlay";
+import MapWithCurrentLocation from "./MapWithCurrentLocation";
 
 const Result = (props) => {
   const [loadingOverlay, setLoadingOverlay] = useState(false);
@@ -23,7 +24,7 @@ const Result = (props) => {
   return (
     <AppLayout>
       {loadingOverlay && <LoadingOverlay />}
-      <section className="container clearfix" >
+      <section className="container clearfix">
         <div className="content3">
           <div className="row">
             <div className="heading">Quotes and Vehicles</div>
@@ -89,13 +90,15 @@ const Result = (props) => {
                 <div id="iframeContainer">
                   <iframe
                     // src={mapUrl}
-                    src={''}
+                    src={""}
                     id="ctl00_ContentPlaceHolder1_ifrm"
                     width="100%"
                     height="200"
                     frameBorder="0"
                     style={{ marginBottom: "-20px" }}
-                  ></iframe>
+                  >
+                    <MapWithCurrentLocation />
+                  </iframe>
                 </div>
                 <br />
                 <br />
@@ -236,15 +239,19 @@ const Result = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    location_details: state.locationDetailsVehicles.location_details_vehicles.location_details,
-    location_vehicles: state.locationDetailsVehicles.location_details_vehicles.location_vehicles,
+    location_details:
+      state.locationDetailsVehicles.location_details_vehicles.location_details,
+    location_vehicles:
+      state.locationDetailsVehicles.location_details_vehicles.location_vehicles,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     getRequestToBookingVehicles: (url) =>
-      dispatch(actionCreators.getRequestToLocationDetailsVechiclesDispatch(url)),
+      dispatch(
+        actionCreators.getRequestToLocationDetailsVechiclesDispatch(url)
+      ),
   };
 };
 

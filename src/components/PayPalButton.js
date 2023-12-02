@@ -56,6 +56,14 @@ const PayPalButton = (props) => {
     await updateBookingStatus(props?.uuid, "Cancelled");
     // Additional actions on payment cancellation
   };
+  const styleOptions = {
+    layout: "horizontal", // or "vertical"
+    color: "blue", // "gold", "blue", "silver", "black"
+    shape: "rect", // "rect" or "pill"
+    label: "paypal", // "paypal", "checkout", "pay", "buynow", or "installment"
+    tagline: false, // true or false
+    height: 40, // maximum height of the button
+  };
   return (
     <PayPalScriptProvider options={initialOptions}>
       <div>
@@ -64,7 +72,7 @@ const PayPalButton = (props) => {
           onApprove={onApprove}
           onCancel={onCancel}
           id="paypal-buttons"
-          style={{ display: "none" }}
+          style={styleOptions}
         />
       </div>
     </PayPalScriptProvider>

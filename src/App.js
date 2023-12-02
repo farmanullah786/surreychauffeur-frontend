@@ -165,10 +165,10 @@ function App() {
       path: "/site-map",
       element: <SiteMap />,
     },
-    {
-      path: "/sightseeing-tour",
-      element: <SightSeeingTour />,
-    },
+    // {
+    //   path: "/sightseeing-tour",
+    //   element: <SightSeeingTour />,
+    // },
     {
       path: "/signup-form",
       element: <SignUp />,

@@ -72,9 +72,9 @@ const SiteMap = () => {
               <li>
                 <Link to="/group-transfer">Group Transfer Page</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/sightseeing-tour">Sightseeing Tour Page</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/our-vehicle">Our Vehicle Page</Link>
               </li>

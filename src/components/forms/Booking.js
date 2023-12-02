@@ -5,6 +5,7 @@ import PaymentSection from "../bookingForm/PaymentSection";
 
 
 const Booking = (props) => {
+  // console.log(props?.location_details)
   return (
   
       <div id="book">
@@ -18,6 +19,8 @@ const Booking = (props) => {
         <PassengerDetails
           pickUpDate={props?.location_details?.pick_up_date}
           dropUpDate={props?.location_details?.drop_up_date}
+          location_details={props?.location_details}
+          uuidObject={props?.uuidObject}
           errors={props?.errors}
           register={props?.register}
           is_passenger={props?.is_passenger}

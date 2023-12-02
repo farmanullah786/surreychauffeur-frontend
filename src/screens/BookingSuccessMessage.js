@@ -12,11 +12,6 @@ const BookingSuccessMessage = (props) => {
   const uuid = params.get("uuid") ?? null;
   const [loadingOverlay, setLoadingOverlay] = useState(false);
 
-  const showPayPalButtons = () => {
-    document.getElementById("paypal-buttons").click()
-    // document.querySelector(".custom-paypay-button").click()
-  };
-
   useEffect(() => {
     props?.getRequestToBooking(`booking/?booked_uuid=${uuid}`);
   }, [uuid]);
@@ -117,11 +112,6 @@ const BookingSuccessMessage = (props) => {
                         and complete your booking.
                         <br />
                         <br />
-                        <PayPalButton
-                          uuid={uuid}
-                          price={props?.booking?.price}
-                          setLoadingOverlay={setLoadingOverlay}
-                        />
                         {props?.booking?.status == "Paid" ? (
                           <input
                             type="button"
@@ -130,16 +120,16 @@ const BookingSuccessMessage = (props) => {
                             className="paypalbtn"
                           />
                         ) : props?.booking?.payment_type == "paypal" ? (
-                          <input
-                            type="button"
-                            value="Redirect to Paypal Page"
-                            id="ctl00_ContentPlaceHolder1_btnredirectpaypal"
-                            className="paypalbtn"
-                            onClick={() => {
-                              setShowPaypal(true);
-                              showPayPalButtons();
-                            }}
-                          />
+                            <div
+                              id="ctl00_ContentPlaceHolder1_btnredirectpaypal"
+                              style={{width:"20%"}}
+                            >
+                              <PayPalButton
+                                uuid={uuid}
+                                price={props?.booking?.price}
+                                setLoadingOverlay={setLoadingOverlay}
+                              />
+                            </div>
                         ) : props?.booking?.payment_type == "cash" ? (
                           <input
                             type="button"

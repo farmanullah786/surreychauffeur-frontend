@@ -69,11 +69,11 @@ const NavigationBar = () => {
                 Group Transfers<span className="nav-sep">|</span>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/sightseeing-tour">
                 Sightseeing Tour<span className="nav-sep">|</span>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/our-vehicle">Our vehicles</Link>
             </li>

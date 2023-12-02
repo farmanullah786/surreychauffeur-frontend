@@ -42,7 +42,7 @@ const Footer = () => {
               <li><Link to="/cruis-port-transfort"><i className="fa fa-caret-right" aria-hidden="true"></i>Cruise Port Transfer</Link></li>
               <li><Link to="/station-transfort"><i className="fa fa-caret-right" aria-hidden="true"></i>Station Transfer</Link></li>
               <li><Link to="/corporate-transfer"><i className="fa fa-caret-right" aria-hidden="true"></i>Corporate Transfer</Link></li>
-              <li><Link to="/sightseeing-tour"><i className="fa fa-caret-right" aria-hidden="true"></i>Sightseeing Tour</Link></li>
+              {/* <li><Link to="/sightseeing-tour"><i className="fa fa-caret-right" aria-hidden="true"></i>Sightseeing Tour</Link></li> */}
               <li><Link to="/our-vehicle"><i className="fa fa-caret-right" aria-hidden="true"></i>Our Vehicles</Link></li>
               <li><Link to="/contact-us"><i className="fa fa-caret-right" aria-hidden="true"></i>Contact Us</Link></li>
               <li><Link to="/drive-with-us"><i className="fa fa-caret-right" aria-hidden="true"></i>Drive With Us</Link></li>

@@ -11,6 +11,7 @@ const PassengerDetails = (props) => {
   const [isPassenger, setIsPassenger] = useState(
     props?.is_passenger ? props?.is_passenger : "yes"
   );
+  console.log(props?.location_details)
   return (
     <div id="book-right">
       <div class="book-h3">Passenger Details</div>
@@ -200,8 +201,13 @@ const PassengerDetails = (props) => {
             </span>
           </div>
         </div>
-        {}
-        <ReturnPath register={props?.register} errors={props?.errors}  dropUpDate={props?.dropUpDate}/>
+        {props?.location_details?.two_way && (
+          <ReturnPath
+            register={props?.register}
+            errors={props?.errors}
+            dropUpDate={props?.dropUpDate}
+          />
+        )}
         <div id="ctl00_ContentPlaceHolder1_Update3">
           <div id="ctl00_ContentPlaceHolder1_pnlcheckpassenger">
             <div className="book-list">
